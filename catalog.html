@@ -29,14 +29,24 @@
     <main>
       <section class="filters">
               <h2 class="visualle-hidden">Фильтр списка</h2>
+            <div>
               <p>Стоимость:</p>
+              <input type="range" min="1" max="15000" step="1" value="500">
+              <p>От:</p>
+              <input type="number" min="0" max="15000" step="1" value="0"> 
+              <p>До:</p>
+              <input type="number" min="0" max="15000" step="1" value="15000"> 
+            </div>
 
               <p>Сортировать:</p>
               <ul>
                 <li>По цене</li>
                 <li>По типу</li>
                 <li>По названию</li>
-                
+                <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По возврастанию"></button></li>
+                <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По убыванию"></button></li>
+              </ul>
+  
               <p>Сетка</p>
               <ul>
                 <li><input type="radio" checked>Адаптация</li>
