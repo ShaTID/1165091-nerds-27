@@ -30,13 +30,11 @@
       <section class="filters">
               <h2 class="visualle-hidden">Фильтр списка</h2>
             <div>
-              <p>Стоимость:</p>
-              <input type="range" min="1" max="15000" step="1" value="500">
-              <p>От:</p>
-              <input type="number" min="0" max="15000" step="1" value="0"> 
-              <p>До:</p>
-              <input type="number" min="0" max="15000" step="1" value="15000"> 
-            </div>
+              <label>Стоимость:<br><input type="range" min="1" max="15000" step="1" value="500"></label>
+              <br>
+              <label>От:<br><input type="number" min="0" max="15000" step="1" value="0"></label>
+              <br>
+              <label>До:<br><input type="number" min="0" max="15000" step="1" value="15000"></label>
 
               <p>Сортировать:</p>
               <ul>
@@ -46,13 +44,16 @@
                 <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По возврастанию"></button></li>
                 <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По убыванию"></button></li>
               </ul>
-  
+            </div>
+ 
+            <div>
               <p>Сетка</p>
               <ul>
                 <li><input type="radio" checked>Адаптация</li>
                 <li><input type="radio" name="">Фиксированная</li>
                 <li><input type="radio" name="">Резиновая</li>
               </ul>
+
               <p>Особенности</p>
               <ul>
                 <li><input type="checkbox" checked>Слайдер</li>
@@ -61,13 +62,14 @@
                 <li><input type="checkbox" name="">Галерея</li>
                 <li><input type="checkbox" name="">Корзина</li>
               </ul>
+
               <ul>
                 <li>
                   <button type="button">Показать</button>
                 </li>
               </ul>
+          </div>
       </section>
-
 
       <section class="catalog">
          <h2 class="visually-hidden">Список Товаров</h2>
@@ -132,7 +134,6 @@
               </p>  
             </li>
           </ul>
-          <!--Проба использования Пагинации-->
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current"><a>1</a></li> 
             <li class="pagination-item"><a href="#">2</a></li>
@@ -145,9 +146,7 @@
 
         <footer>
         <div class="block-maps">
-          <a>
-             <img src="https://via.placeholder.com/150x100" alt="">
-            </a>
+          <a><img src="https://via.placeholder.com/150x100" alt=""></a>
         </div>
         <div class="Footer-contacts">
           <ul>
@@ -155,7 +154,7 @@
             <li><p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 18/8</p></li>
             <li><p>тел. +7(812) 275-75-75</p></li>
             <li><button type="button">Напишите нам</button></li>
-            </ul>
+          </ul>
         </div>
 
             <ul>
@@ -172,8 +171,15 @@
     <section>
       <h2>корзина</h2>
       <p>Список товаров в корзине:</p>
-      <!-- Здесь будет форма -->
       <button type="button">Оплатить</button>
+    </section>
+
+     <section>
+      <h2>Напишите нам</h2>
+      <p>Ваш вопрос:<br>
+       <input type="text" size="60">
+      </p>
+      <button type="button">Отправить</button>
     </section>
 
 </body>	
