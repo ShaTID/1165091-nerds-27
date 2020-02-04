@@ -4,6 +4,59 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн Студия "Нердс"</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#slider-range" ).slider({
+        step: 250,
+        range: true,
+        min: 0,
+        max: 15000,
+        values: [ 250, 15000 ],
+        slide: function( event, ui ) {
+          $( "#amount" ).val(ui.values[ 0 ] );
+          $( "#amount_1" ).val(ui.values[ 1 ] );
+        }
+      });
+      $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) );
+      $( "#amount_1" ).val( $( "#slider-range" ).slider( "values", 1 ) );
+      //Первая ячейка ползунка
+      $("input#amount").change(function(){
+      	var value1=$("input#amount").val();
+      	var value2=$("input#amount_1").val();
+      	  if(parseInt(value1) > parseInt(value2)){
+      	  	value1 = value2;
+      	  	$("input#amount").val(value1);
+      	  } 
+      	  $("#slider-range").slider("values",0,value1);
+      })
+      //Вторая ячейка ползунка
+      $("input#amount_1").change(function(){
+      	var value1=$("input#amount").val();
+      	var value2=$("input#amount_1").val();
+      	  if(parseInt(value1) > parseInt(value2)){
+      	  	value2 = value1;
+      	  	$("input#amount_1").val(value1);
+      	  } 
+      	  $("#slider-range").slider("values",1,value2);
+       })
+      //Фильтрация ввода
+      jQuery('#amount, #amount_1').keypress(function(event){
+      	var key, keyChar;
+      	if(!event) var event = window.event;
+
+      	if (event.keyCode) key = event.keyCode;
+      	else if (event.which) key = event.which;
+
+      	if(key==null || key==0 || key==8 || key==13 || key==9 || key==46 || key==37 || key==39 )
+      		return true;
+      	keyChar=String.fromCharCode(key);
+      	if(!/\d/.test(keyChar)) return false;
+       });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -27,26 +80,17 @@
       </nav>
     </header>
     <main>
-      <section class="filters">
+      <section>
+        <div class="filters">
               <h2 class="visualle-hidden">Фильтр списка</h2>
-            <div>
-              <label>Стоимость:<br><input type="range" min="1" max="15000" step="1" value="500"></label>
-              <br>
-              <label>От:<br><input type="number" min="0" max="15000" step="1" value="0"></label>
-              <br>
-              <label>До:<br><input type="number" min="0" max="15000" step="1" value="15000"></label>
+              <div id="slider-range"></div>
+              <p>
+              <label for="amount">Стоимость:</label>
+              <input type="text" id="amount">
+              <input type="text" id="amount_1">
+              </p>
+        </div>
 
-              <p>Сортировать:</p>
-              <ul>
-                <li>По цене</li>
-                <li>По типу</li>
-                <li>По названию</li>
-                <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По возврастанию"></button></li>
-                <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По убыванию"></button></li>
-              </ul>
-            </div>
- 
-            <div>
               <p>Сетка</p>
               <ul>
                 <li><input type="radio" checked>Адаптация</li>
@@ -68,7 +112,18 @@
                   <button type="button">Показать</button>
                 </li>
               </ul>
-          </div>
+        </div>
+
+        <div class="sort"
+      	<p>Сортировать:</p>
+              <ul>
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По названию</li>
+                <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По возврастанию"></button></li>
+                <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По убыванию"></button></li>
+              </ul>
+        </div>
       </section>
 
       <section class="catalog">
