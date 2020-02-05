@@ -20,7 +20,9 @@
         </ul>
         <ul>
           <li>
-             <button type="button">Корзина</button>
+            <form action="" target="_blank">
+             <button tepe="button">Корзина</button>
+            </form>
            </li>
         </ul>
       </nav>
@@ -31,7 +33,7 @@
     	<div class="logo-pravila">
     	<img src="https://via.placeholder.com/150x100" alt="">
     <!--Кружки перехода по картинкам-->
-    	<span class="dot"></span>
+    	  <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
     	<ul>
@@ -132,17 +134,20 @@
       <button type="button">Оплатить</button>
     </section>
 
-     <section>
+     <div class="WriteMe">
       <h2>Напишите нам</h2>
-      <p>Ваше Имя:<br>
-      <input type="text" title="Ваше Имя" size="40">
-      </p>
-      <p>Ваша фамилия:<br>
-      <input type="text" size="40">
-      </p>
-      <p>Ваш вопрос:<br>
-       <input type="submit">
-      </p>
-    </section>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for id="Imya">Ваше Имя:</label>
+        <input type="text" id="Imya" name="Name" value="Ваше Имя">
+        <br>
+        <label for id="Fam" ">Ваша Фамилия:</label>
+        <input type="text" id="Fam" name="Familia" value="Ваша Фамилия">
+        <br>
+        <textarea id="comment" name="comment" rows="7">Текст сообщения</textarea>
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
+  </div>
+      
 </body>
 </html>
