@@ -81,51 +81,50 @@
     <main>
       <section class="filter">
       	    <h2 class="visualle-hidden">Фильтр списка</h2>
-      	      <fieldset>
+      	    <form method="get" action="https://echo.htmlacademy.ru"> 
+              <fieldset>
       	      <legend>Стоимость:</legend>
-              <form method="get" action="https://echo.htmlacademy.ru">
               <div id="slider-range"></div>
               <p>
                <label for="amount">От:</label>
-               <input type="text" id="amount">
+               <input type="text" id="amount" name="price-from">
                <label for="amount_1">До:</label>
-               <input type="text" id="amount_1">
+               <input type="text" id="amount_1" name="price-before">
               </p>
               </fieldset>
 
               <fieldset>
               	<legend>Сетка</legend>
               <ul>
-                <li><input type="radio" checked name="Grid">Адаптация</li>
-                <li><input type="radio" name="Grid">Фиксированная</li>
-                <li><input type="radio" name="Grid">Резиновая</li>
+                <li><input type="radio" checked name="Grid-Adaptation">Адаптация</li>
+                <li><input type="radio" name="Grid-fix">Фиксированная</li>
+                <li><input type="radio" name="Grid-rubber">Резиновая</li>
               </ul>
               </fieldset>
 
               <fieldset>
               	<legend>Особенности</legend>
               <ul>
-                <li><input type="checkbox" checked name="Feature">Слайдер</li>
-                <li><input type="checkbox" name="Feature">Блок преимуществ</li>
-                <li><input type="checkbox" checked name="Feature">Новости</li>
-                <li><input type="checkbox" name="Feature">Галерея</li>
-                <li><input type="checkbox" name="Feature">Корзина</li>
+                <li><input type="checkbox" checked name="Feature-Slider">Слайдер</li>
+                <li><input type="checkbox" name="Feature-advantages">Блок преимуществ</li>
+                <li><input type="checkbox" checked name="Feature-news">Новости</li>
+                <li><input type="checkbox" name="Feature-gallery">Галерея</li>
+                <li><input type="checkbox" name="Feature-basket">Корзина</li>
               </ul>
               </fieldset>
                   <button type="submit">Показать</button>
-        </div>
+      </form>
 
         <div class="sort">
       	<p>Сортировать:</p>
               <ul>
-                <li><a class:="filter-price" href="">По цене</a></li>
-                <li><a class:="filter-type" href="">По типу</a></li>
-                <li><a class:="filter-name" href="">По названию</a></li>
-                <li><a class:="filter-name" href="">По возрастанию</a></li>
-                <li><a class:="filter-name" href="">По убыванию</a></li>
+                <li><a href="">По цене</a></li>
+                <li><a href="">По типу</a></li>
+                <li><a href="">По названию</a></li>
+                <li><a href="">По возрастанию</a></li>
+                <li><a href="">По убыванию</a></li>
               </ul>
               </div>
-            </form>
         </section>
                <!-- <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По возврастанию"></button></li>
                 <li><button  type="button"><img src="https://via.placeholder.com/25x25" alt="По убыванию"></button></li> -->
@@ -171,9 +170,9 @@
           </ul>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current"><a>1</a></li> 
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Следующая</a></li>
+            <li class="pagination-item"><a href="">2</a></li>
+            <li class="pagination-item"><a href="">3</a></li>
+            <li class="pagination-item"><a href="">Следующая</a></li>
           </ul>
       </section>
     </main>
