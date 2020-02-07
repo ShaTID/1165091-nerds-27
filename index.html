@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <title>Дизайн Студия "Нердс"</title>
+    <title>Дизайн Студия "Nёrds"</title>
   </head>
   <body>
     <header>
       <nav>
         <a>
-          <img src="https://via.placeholder.com/150x100" alt="">
+          <img src="https://via.placeholder.com/150x100" alt="Логотип студии">
         </a>
         <ul>
           <li><a href="">Студия</a></li>
@@ -26,18 +26,36 @@
     </header>
     <main>
     	<section>
-    	<h1> Правила студии </h1>
-    	<div class="logo-pravila">
-    	<img src="https://via.placeholder.com/150x100" alt="">
-    <!--Кружки перехода по картинкам-->
-    	  <span class="dot"></span>
+    	<h1> Слайдеры </h1>
+<!-- <span class="dot"></span> Это заготовка под кружки, для слайдера -->
         <span class="dot"></span>
-        <span class="dot"></span>
+    	<div class="slider">
+    	<img src="https://via.placeholder.com/400x100" alt="">
     	<ul>
     		<li><p><b>Долго, дорого, скрупулезно</b></p></li>
     		<li><p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p></li>
-    		<li><button type="button">Узнать больше</button></li>
+    		<li><a href="">Узнать больше</a></li>
     	</ul>
+        </div>
+
+        <span class="dot"></span>
+        <div class="slider">
+        <img src="https://via.placeholder.com/400x100" alt="">
+        <ul>
+            <li><p><b>Любим математику как никто другой</b></p></li>
+            <li><p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p></li>
+            <li><a href="">Узнать больше</a></li>
+        </ul>
+        </div>
+
+        <span class="dot"></span>
+        <div class="slider">
+        <img src="https://via.placeholder.com/400x100" alt="">
+        <ul>
+            <li><p><b>Только ночь, только хардкор</b></p></li>
+            <li><p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p></li>
+            <li><a href="">Узнать больше</a></li>
+        </ul>
         </div>
         </section>
 
@@ -91,10 +109,10 @@
         <div class="partners">
         	<h2>Партнеры</h2>
         	<ul>
-        	 	<li><a><img src="https://via.placeholder.com/100x50" alt=""></a></li>
-        	 	<li><a><img src="https://via.placeholder.com/100x50" alt=""></a></li>
-        	 	<li><a><img src="https://via.placeholder.com/100x50" alt=""></a></li>
-        	 	<li><a><img src="https://via.placeholder.com/100x50" alt=""></a></li>
+        	 	<li><a href="https://htmlacademy.ru"><img src="https://via.placeholder.com/100x50" alt="Переход на сайт HTML Academy"></a></li>
+        	 	<li><a href=""><img src="https://via.placeholder.com/100x50" alt="Барбер шоп Бородинский"></a></li>
+        	 	<li><a href=""><img src="https://via.placeholder.com/100x50" alt="PINK"></a></li>
+        	 	<li><a href=""><img src="https://via.placeholder.com/100x50" alt="Mishka"></a></li>
         	 </ul>
         </div>
         </section>
@@ -115,9 +133,9 @@
         </div>
 
             <ul>
-                <li><a href="#">Вконтакте</a></li>
-                <li><a href="#">Фейсбук</a></li>
-                <li><a href="#">Инстаграм</a></li>
+                <li><a href="">Вконтакте</a></li>
+                <li><a href="">Фейсбук</a></li>
+                <li><a href="">Инстаграм</a></li>
             </ul>
             <div>
                 <h2>Давайте дружить, это выгодно!</h2>
@@ -126,19 +144,23 @@
     </footer>  
 
 
+<!--Попап-->
+
     <div class="WriteMe">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <div>
-        <label for id="Imya">Ваше Имя:</label>
-        <input type="text" id="Imya" name="Name" placeholder="Ваше Имя">
+        <label for id="Contact-name">Ваше Имя:</label>
+        <input type="text" id="Contact-name" name="Name" placeholder="Имя Фамилия">
         </div>
         <div>
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Abc123@gmail.com">
+            <input type="email" id="email" name="email" placeholder="email@example.com">
          </div>
         <div>
-            <textarea id="comment" name="comment" rows="7" placeholder="Текст сообщения"></textarea>
+            <label for="comment">Текст письма:</label>
+            <br>
+            <textarea id="comment" name="comment" rows="7" placeholder="В свободной форме"></textarea>
         </div>
         <input type="submit" value="Отправить">
        </form>
