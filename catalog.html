@@ -96,20 +96,44 @@
               <fieldset>
               	<legend>Сетка</legend>
               <ul>
-                <li><input type="radio" checked name="Grid-Adaptation">Адаптация</li>
-                <li><input type="radio" name="Grid-fix">Фиксированная</li>
-                <li><input type="radio" name="Grid-rubber">Резиновая</li>
+                <li>
+                  <input type="radio" name="Grid" value="Grid-Adaptation" id="filter-Adaptation" checked>
+                  <label for="filter-Adaptation">Адаптация</label>
+                </li>
+                <li>
+                  <input type="radio" name="Grid" value="Grid-fix" id="filter-fix">
+                  <label for="filter-fix">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="Grid" value="Grid-rubber" id="filter-rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
               </ul>
               </fieldset>
 
               <fieldset>
               	<legend>Особенности</legend>
               <ul>
-                <li><input type="checkbox" checked name="Feature-Slider">Слайдер</li>
-                <li><input type="checkbox" name="Feature-advantages">Блок преимуществ</li>
-                <li><input type="checkbox" checked name="Feature-news">Новости</li>
-                <li><input type="checkbox" name="Feature-gallery">Галерея</li>
-                <li><input type="checkbox" name="Feature-basket">Корзина</li>
+                <li>
+                  <input type="checkbox" checked name="Feature-Slider"  id="filter-slider">
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="Feature-advantages" id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" checked name="Feature-news" id="filter-news">
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="Feature-gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="Feature-basket" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
               </ul>
               </fieldset>
                   <button type="submit">Показать</button>
