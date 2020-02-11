@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: none;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+
+  background-color: #eeeeee;
+  background-image: url("img/background/grey-back.png");
+  background-repeat: no-repeat
+}
+
+.site-navigation,
+.basket-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.basket-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket-navigation a:hover,
+.basket-navigation a:focus {
+  background-color: #fb565a;
+}
