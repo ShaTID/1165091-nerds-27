@@ -133,6 +133,104 @@ background-color: #00bc6c;
   text-transform: uppercase;
 }
 
+/*Страница Catalog*/
+
+.page-title {
+	font-size: 55px;
+	font-weight: 500;
+	line-height: 55px;
+	color: #000000;
+	background-color: #eeeeee;
+    background-image: url("img/background/grey-back.png");
+    background-repeat: repeat;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #283136;
+}
+.filter-input:disabled + label {
+  color: #d0d2d3;
+  opacity: 0.3;
+}
+
+.filter-show {
+  background-color: #eeeeee;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog h3{
+	list-style: none;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list {
+  background-color: #f8f8f8;
+  box-shadow: 1px solid rgba(0, 1, 1, 0.1);
+}
+
+.catalog-list:hover {
+  box-shadow: 1px solid rgba(0, 1, 1, 0.2);
+}
+
+.pagination-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.pagination-item a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+.pagination-item a:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+  border: 3px solid #dbdbdb;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 /*подвал*/
 
 .main-footer {
