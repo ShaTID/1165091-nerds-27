@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Roboto", Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: #000000;
-  text-transform: none;
+  text-transform: uppercase;
 
   background-color: #ffffff;
 }
@@ -16,14 +16,26 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
+.button {
+  font: inherit;
 
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background: #fb565a;
+  border: none;
+}
+
+.main-navigation {
   background-color: #eeeeee;
   background-image: url("img/background/grey-back.png");
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+}
+
+.basket-link a {
+  background-color: #a6a6a6;
 }
 
 .site-navigation,
@@ -41,4 +53,40 @@ a {
 .basket-navigation a:hover,
 .basket-navigation a:focus {
   background-color: #fb565a;
+}
+
+.catalog {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/*Сфера деятельности*/
+
+.Sfera {
+  list-style: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.Sfera h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+
+.main-footer {
+  color: #000000;
+  list-style: none;
+  background-color: #ffffff;
+
+}
+
+.social-network {
+  list-style: none;
 }
