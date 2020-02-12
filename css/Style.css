@@ -28,6 +28,15 @@ a {
   border: none;
 }
 
+
+.green {
+  background: #00ca74;
+}
+
+.yellow {
+  background: #efc84a;
+}
+
 .main-navigation {
   background-color: #eeeeee;
   background-image: url("img/background/grey-back.png");
@@ -77,8 +86,6 @@ a {
   font-weight: 700;
   text-transform: uppercase;
 }
-
-
 
 .main-footer {
   color: #000000;
