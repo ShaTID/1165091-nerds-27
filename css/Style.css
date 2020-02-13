@@ -198,11 +198,6 @@ background-color: #00bc6c;
   background-color: #eeeeee;
 }
 
-.catalog {
-  color: #40b684;
-  text-decoration: none;
-}
-
 .browser{
 	opacity: 0.12;
 }
@@ -210,13 +205,13 @@ background-color: #00bc6c;
 .catalog-list {
   list-style: none;
   background-color: #f8f8f8;
-  box-shadow: 1px solid rgba(0, 1, 1, 0.1);
+  border: 1px solid rgba(0, 1, 1, 0.1);
 }
 
 .product:hover
 .catalog-price{
   display: block;
-  box-shadow: 1px solid rgba(0, 1, 1, 0.2);
+  border: 1px solid rgba(0, 1, 1, 0.5);
 }
 
 .product:hover
@@ -229,6 +224,7 @@ background-color: #00bc6c;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -275,15 +271,24 @@ background-color: #00bc6c;
 /*подвал*/
 
 .main-footer {
-  font-size: 36;
-  line-height: 36x;
-  font-weight: 700;
   text-align: center;
   text-transform: none;
 
   color: #000000;
   list-style: none;
   background-color: #ffffff;
+}
+
+.address h3{
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.address p{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
 }
 
 .social-network {
@@ -293,9 +298,23 @@ background-color: #00bc6c;
 
 .social-network a:hover,
 .social-network a:focus {
+  background-color: #ffffff;
   background-color: #e74246;
 }
 .social-network a:active {
+  background-color: #ffffff;
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.Footer-contacts h2{
+font-size: 36px;
+font-weight: 700;
+line-height: 36px;
+}
+
+.footer-contacts p{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
 }
