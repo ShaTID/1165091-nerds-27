@@ -16,6 +16,22 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+	display: none;
+}
+
+.Write-me {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	display: none;
+}
+
+.shop {
+	color: #40b684;
+	text-decoration: underline;
+}
+
 .catalog-price{
   background-color: #eeeeee;
   text-align: center;
@@ -116,10 +132,6 @@ background-color: #00bc6c;
   color: #ababab;
 }
 
-.catalog {
-  color: #40b684;
-  text-decoration: underline;
-}
 
 /*Сфера деятельности*/
 
@@ -177,19 +189,22 @@ background-color: #00bc6c;
 }
 
 .filter-show {
-  background-color: #eeeeee;
+  text-transform: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   text-align: center;
-  color: #000000;
+
+  background-color: #eeeeee;
 }
 
-.catalog h3{
-	list-style: none;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 30px;
+.catalog {
+  color: #40b684;
+  text-decoration: none;
+}
+
+.browser{
+	opacity: 0.12;
 }
 
 .catalog-list {
@@ -198,16 +213,19 @@ background-color: #00bc6c;
   box-shadow: 1px solid rgba(0, 1, 1, 0.1);
 }
 
-.catalog-list:hover
-.catalog-price {
+.product:hover
+.catalog-price{
   display: block;
   box-shadow: 1px solid rgba(0, 1, 1, 0.2);
 }
 
-
+.product:hover
+.browser {
+  opacity: 1.0;
+}
 
 .catalog-price h2{
-  text-transform: uppercase;
+  text-decoration: none;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -219,7 +237,6 @@ background-color: #00bc6c;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  text-transform: uppercase;
   color: #666666;
 }
 
