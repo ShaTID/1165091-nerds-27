@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+.catalog-price{
+  background-color: #eeeeee;
+  text-align: center;
+  display: none;
+}
+
 .button {
   font: inherit;
 
@@ -188,15 +194,33 @@ background-color: #00bc6c;
 
 .catalog-list {
   list-style: none;
-}
-
-.catalog-list {
   background-color: #f8f8f8;
   box-shadow: 1px solid rgba(0, 1, 1, 0.1);
 }
 
-.catalog-list:hover {
+.catalog-list:hover
+.catalog-price {
+  display: block;
   box-shadow: 1px solid rgba(0, 1, 1, 0.2);
+}
+
+
+
+.catalog-price h2{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.catalog-price p{
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #666666;
 }
 
 .pagination-list {
