@@ -216,8 +216,6 @@ background-color: #00bc6c;
 }
 
 .dash {
-  font-weight: 25px;
-  line-height: 2px;
   color: #fb565a;
 }
 
@@ -229,18 +227,25 @@ background-color: #00bc6c;
     line-height: 18px;
 }
 
+.about-in-percent p{
+font-weight: 700;
+text-transform: uppercase;
+	}
+
 .percent {
-  list-style: none;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 10.06px;
+	list-style: none;
+
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 10.06px;
 }
 
 .percent-text {
-  color: #283136;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
+	list-style: none;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
 }
 
 /*Партнеры*/
@@ -249,11 +254,15 @@ background-color: #00bc6c;
     list-style: none;
 }
 
-.partners li:hover
-.partners li:focus {
+.partners-logo {
+  opacity: 0.2;
+}
+
+.partners-logo:hover,
+.partners-logo:focus {
   opacity: 1.0;
 }
-.partners li:active {
+.partners-logo:active {
   opacity: 0.1;
 }
 
