@@ -132,6 +132,25 @@ background-color: #00bc6c;
   color: #ababab;
 }
 
+/*Слайдеры*/
+
+.slider {
+  text-transform: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+.slider img{
+  width: 698px;
+  height: 413px;
+}
+
+.slider h3{
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
 
 /*Сфера деятельности*/
 
@@ -144,11 +163,98 @@ background-color: #00bc6c;
   text-transform: none;
 }
 
+
 .Sfera h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/* О студии*/
+
+.about {
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about h3 {
+  width: 650px;
+  height: 87px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.about p{
+  width: 616px;
+  height: 40px;
+  color: #283136;
+}
+
+.order-info {
+  width: 429px;
+  height: 160px;
+  color: #283136;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.order-info h4{
+  font-family: "Roboto - Bold", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.order-info ul{
+  list-style: none;
+  padding: 0;
+  font-family: "Roboto - Regular", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.dash {
+  font-weight: 25px;
+  line-height: 2px;
+  color: #fb565a;
+}
+
+
+.about-in-percent ul{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.percent {
+  list-style: none;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
+}
+
+.percent-text {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/*Партнеры*/
+
+.partners ul{
+    list-style: none;
+}
+
+.partners li:hover
+.partners li:focus {
+  opacity: 1.0;
+}
+.partners li:active {
+  opacity: 0.1;
 }
 
 /*Страница Catalog*/
