@@ -7,8 +7,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #000000;
-  text-transform: uppercase;
-
+  text-transform: none;
   background-color: #ffffff;
 }
 
@@ -17,7 +16,11 @@ a {
 }
 
 .visually-hidden {
-	display: none;
+	position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .Write-me {
@@ -40,21 +43,32 @@ a {
 
 .button {
   font: inherit;
-
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-
   background: #fb565a;
   border: none;
 }
 
 .button:hover,
 .button:focus { 
-background-color: #e74246;
+  background-color: #e74246;
 }
 .button:active {
+  background-color: #d7373b;
+  color: #e37376;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.red {
+  background-color: #fb565a;
+}
+.red:hover,
+.red:focus{ 
+  background-color: #e74246;
+}
+.red:active {
   background-color: #d7373b;
   color: #e37376;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
@@ -65,7 +79,7 @@ background-color: #e74246;
 }
 .green:hover,
 .green:focus{ 
-background-color: #00bc6c;
+  background-color: #00bc6c;
 }
 .green:active {
   background-color: #00aa62;
@@ -99,11 +113,9 @@ background-color: #00bc6c;
 
 .main-logo:hover,
 .main-logo:focus {
-  background-color: #303030;
   opacity: 0.8;
 }
 .main-logo:active {
-  background-color: #a7a7a7;
   opacity: 0.3;
 }
 
@@ -135,7 +147,6 @@ background-color: #00bc6c;
 /*Слайдеры*/
 
 .slider {
-  text-transform: none;
   list-style: none;
   text-decoration: none;
 }
@@ -154,17 +165,16 @@ background-color: #00bc6c;
 
 /*Сфера деятельности*/
 
-.Sfera {
+.sphere {
   list-style: none;
   color: #000000;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  text-transform: none;
 }
 
 
-.Sfera h3 {
+.sphere h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -174,7 +184,6 @@ background-color: #00bc6c;
 /* О студии*/
 
 .about {
-  text-transform: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -182,21 +191,18 @@ background-color: #00bc6c;
 
 .about h3 {
   width: 650px;
-  height: 87px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
 }
 
 .about p{
-  width: 616px;
-  height: 40px;
   color: #283136;
+  width: 616px;
 }
 
 .order-info {
   width: 429px;
-  height: 160px;
   color: #283136;
   font-size: 16px;
   line-height: 24px;
@@ -219,39 +225,38 @@ background-color: #00bc6c;
   color: #fb565a;
 }
 
-
-.about-in-percent ul{
-    list-style: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
+.about-in-percent {
+  list-style: none;
+  font-size: 16px;
 }
 
-.about-in-percent p{
-font-weight: 700;
-text-transform: uppercase;
-	}
+.about-in-percent ul{
+  list-style: none;
+}
+
+.year {
+  width: 328px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
 
 .percent {
-	list-style: none;
-
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 10.06px;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
 }
 
 .percent-text {
-	list-style: none;
-    color: #283136;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
+  color: #283136;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 /*Партнеры*/
 
 .partners ul{
-    list-style: none;
+  list-style: none;
 }
 
 .partners-logo {
@@ -274,8 +279,8 @@ text-transform: uppercase;
 	line-height: 55px;
 	color: #000000;
 	background-color: #eeeeee;
-    background-image: url("img/background/grey-back.png");
-    background-repeat: repeat;
+  background-image: url("img/background/grey-back.png");
+  background-repeat: repeat;
 }
 
 .filter fieldset {
@@ -292,13 +297,9 @@ text-transform: uppercase;
 .filter ul {
   list-style: none;
   line-height: 20px;
-  text-transform: none;
 }
 
 .slider {
-	width: 261px;
-	height: 80px;
-	background-color: #eeeeee;
 	background-color: #f1f1f1;
 }
 
@@ -312,12 +313,10 @@ text-transform: uppercase;
 }
 
 .filter-show {
-  text-transform: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   text-align: center;
-
   background-color: #eeeeee;
 }
 
@@ -353,7 +352,7 @@ text-transform: uppercase;
   border: 1px solid rgba(0, 1, 1, 0.5);
 }
 
-.product:hover
+.product:hove
 .browser {
   opacity: 1.0;
 }
@@ -368,7 +367,6 @@ text-transform: uppercase;
 }
 
 .catalog-price p{
-  text-transform: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -410,11 +408,9 @@ text-transform: uppercase;
 /*подвал*/
 
 .main-footer {
-  text-align: center;
-  text-transform: none;
-
-  color: #000000;
   list-style: none;
+  text-align: center;
+  color: #000000;
   background-color: #ffffff;
 }
 
@@ -432,24 +428,23 @@ text-transform: uppercase;
 
 .social-network {
   list-style: none;
-  text-align:left;
+  text-align: left;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .social-network a:hover,
 .social-network a:focus {
-  background-color: #ffffff;
   background-color: #e74246;
 }
 .social-network a:active {
-  background-color: #ffffff;
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-.Footer-contacts h2{
-font-size: 36px;
-font-weight: 700;
-line-height: 36px;
+.footer-contacts h2{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 .footer-contacts p{
