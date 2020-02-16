@@ -68,6 +68,7 @@ a {
 .red:focus{ 
   background-color: #e74246;
 }
+
 .red:active {
   background-color: #d7373b;
   color: #e37376;
@@ -77,10 +78,12 @@ a {
 .green {
   background-color: #00ca74;
 }
+
 .green:hover,
 .green:focus{ 
   background-color: #00bc6c;
 }
+
 .green:active {
   background-color: #00aa62;
   color: #40c08a;
@@ -90,6 +93,7 @@ a {
 .yellow {
   background: #efc84a;
 }
+
 .yellow:hover,
 .yellow:focus {
   background-color: #eab534;
@@ -139,6 +143,7 @@ a {
 .basket-navigation a:focus {
   color: #fb565a;
 }
+
 .site-navigation a:active,
 .basket-navigation a:active {
   color: #ababab;
@@ -148,7 +153,6 @@ a {
 
 .slider {
   list-style: none;
-  text-decoration: none;
 }
 
 .slider img{
@@ -267,6 +271,7 @@ a {
 .partners-logo:focus {
   opacity: 1.0;
 }
+
 .partners-logo:active {
   opacity: 0.1;
 }
@@ -307,6 +312,7 @@ a {
 .filter-input:focus + label {
   color: #283136;
 }
+
 .filter-input:disabled + label {
   color: #d0d2d3;
   opacity: 0.3;
@@ -331,6 +337,7 @@ a {
 .sort a:focus {
   opacity: 0.6;
 }
+
 .sort a:active {
 	opacity: 1.0;
 	color: #000000;
@@ -346,14 +353,12 @@ a {
   border: 1px solid rgba(0, 1, 1, 0.1);
 }
 
-.product:hover
-.catalog-price{
+.product:hover .catalog-price{
   display: block;
   border: 1px solid rgba(0, 1, 1, 0.5);
 }
 
-.product:hover
-.browser {
+.product:hover .browser {
   opacity: 1.0;
 }
 
@@ -400,6 +405,7 @@ a {
 .pagination-item-current a:focus {
   background-color: #dfdfdf;
 }
+
 .pagination-item-current a:active {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
@@ -426,15 +432,18 @@ a {
 	line-height: 18px;
 }
 
+/*Ссыки на соц сети*/
+
 .social-network {
   list-style: none;
   text-align: left;
-  border-radius: 5px 5px 5px 5px;
+  background-color: #000000;
 }
 
 .social-network a:hover,
 .social-network a:focus {
   background-color: #e74246;
+  background-image: url("img/background/shape-vk.png");
 }
 .social-network a:active {
   background-color: #d7373b;
