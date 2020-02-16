@@ -437,14 +437,23 @@ a {
 .social-network {
   list-style: none;
   text-align: left;
-  background-color: #000000;
+}
+
+.circle {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  text-align:center;
+  line-height: 80px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
 }
 
 .social-network a:hover,
 .social-network a:focus {
   background-color: #e74246;
-  background-image: url("img/background/shape-vk.png");
 }
+
 .social-network a:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
