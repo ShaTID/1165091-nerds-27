@@ -9,6 +9,7 @@ body {
   color: #000000;
   text-transform: none;
   background-color: #ffffff;
+  list-style: none;
 }
 
 a {
@@ -51,16 +52,6 @@ a {
   text-transform: uppercase;
   background: #fb565a;
   border: none;
-}
-
-.button:hover,
-.button:focus { 
-  background-color: #e74246;
-}
-.button:active {
-  background-color: #d7373b;
-  color: #e37376;
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .red {
@@ -106,17 +97,12 @@ a {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-/**/
+/*Навигация/Главный Логотип/ ссылка на корзину*/
 
 .main-navigation {
   background-color: #eeeeee;
-  background-image: url("img/background/grey-back.png");
+  background-image: url('img/background/grey-back.png');
   background-repeat: no-repeat;
-
-}
-
-.main-logo {
-  list-style: none;
 }
 
 .main-logo:hover,
@@ -154,10 +140,6 @@ a {
 }
 
 /*Слайдеры*/
-
-.slider {
-  list-style: none;
-}
 
 .slider img{
   width: 698px;
@@ -217,16 +199,12 @@ a {
 }
 
 .order-info h4{
-  font-family: "Roboto - Bold", Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .order-info ul{
-  list-style: none;
   padding: 0;
-  font-family: "Roboto - Regular", Arial, sans-serif;
-  font-weight: 400;
 }
 
 .dash {
@@ -234,7 +212,6 @@ a {
 }
 
 .about-in-percent {
-  list-style: none;
   font-size: 16px;
 }
 
@@ -288,7 +265,7 @@ a {
 	line-height: 55px;
 	color: #000000;
 	background-color: #eeeeee;
-  background-image: url("img/background/grey-back.png");
+  background-image: url('img/background/grey-back.png');
   background-repeat: repeat;
 }
 
@@ -323,11 +300,13 @@ a {
 }
 
 .filter-show {
-  font-size: 16px;
+  width: 260px;
+  height: 50px;
   font-weight: 500;
   line-height: 18px;
   text-align: center;
   background-color: #eeeeee;
+  border:none;
 }
 
 .sort a{
@@ -389,7 +368,6 @@ a {
 
 .pagination-item a {
   color: #000000;
-  background-color: #eeeeee;
 }
 
 .pagination-item a:hover,
@@ -418,7 +396,6 @@ a {
 /*подвал*/
 
 .main-footer {
-  list-style: none;
   text-align: center;
   color: #000000;
   background-color: #ffffff;
@@ -448,7 +425,7 @@ a {
   width: 79px;
   height: 79px;
   text-align:center;
-  line-height: 80px;
+  line-height: 85px;
   background-color: #e1e1e1;
   border-radius: 50%;
 }
@@ -470,7 +447,5 @@ a {
 }
 
 .footer-contacts p{
-	font-size: 16px;
-	font-weight: 400;
 	line-height: 22px;
 }
