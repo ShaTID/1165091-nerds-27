@@ -7,9 +7,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #000000;
-  text-transform: none;
   background-color: #ffffff;
-  list-style: none;
 }
 
 a {
@@ -24,12 +22,6 @@ a {
   margin: -1px;
 }
 
-.write-me {
-	font-weight: 700;
-	line-height: 18px;
-	display: none;
-}
-
 .shop {
 	color: #40b684;
 	text-decoration: underline;
@@ -39,61 +31,6 @@ a {
   background-color: #eeeeee;
   text-align: center;
   display: none;
-}
-
-/*Кнопки и цвет кнопок*/
-
-.button {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  background: #fb565a;
-  border: none;
-}
-
-.red {
-  background-color: #fb565a;
-}
-.red:hover,
-.red:focus{ 
-  background-color: #e74246;
-}
-
-.red:active {
-  background-color: #d7373b;
-  color: #e37376;
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-}
-
-.green {
-  background-color: #00ca74;
-}
-
-.green:hover,
-.green:focus{ 
-  background-color: #00bc6c;
-}
-
-.green:active {
-  background-color: #00aa62;
-  color: #40c08a;
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-}
-
-.yellow {
-  background: #efc84a;
-}
-
-.yellow:hover,
-.yellow:focus {
-  background-color: #eab534;
-}
-.yellow:active {
-  background-color: #e5a722;
-  color: #ecbe5c;
-  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 /*Навигация/Главный Логотип/ ссылка на корзину*/
@@ -168,6 +105,61 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/*Кнопки и цвет кнопок*/
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background: #fb565a;
+  border: none;
+}
+
+.red {
+  background-color: #fb565a;
+}
+.red:hover,
+.red:focus{ 
+  background-color: #e74246;
+}
+
+.red:active {
+  background-color: #d7373b;
+  color: #e37376;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.green {
+  background-color: #00ca74;
+}
+
+.green:hover,
+.green:focus{ 
+  background-color: #00bc6c;
+}
+
+.green:active {
+  background-color: #00aa62;
+  color: #40c08a;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.yellow {
+  background: #efc84a;
+}
+
+.yellow:hover,
+.yellow:focus {
+  background-color: #eab534;
+}
+.yellow:active {
+  background-color: #e5a722;
+  color: #ecbe5c;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 /* О студии*/
@@ -444,4 +436,91 @@ a {
 
 .footer-contacts p{
 	line-height: 22px;
+}
+
+/*Форма обратной связи*/
+
+.write-me {
+  font-weight: 700;
+  line-height: 18px;
+  display: none;
+}
+
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+.main-header {
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 49px;
+  margin-bottom: 36px;
+}
+
+.main-navigation {
+  display: flex;
+  width: 100%;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 438px;
+  padding-left: 202px;
+  list-style: none;
+}
+
+.basket-navigation {
+  margin-right: 140;
+  list-style: none;
+}
+
+/*Сфера деятельности*/
+
+.sphere {
+  display: flex;
+  justify-content: space-between;
+  margin left: 140px;
+  margin-right: 200px;
+  margin-top: 80px;
+}
+
+/*footer-flex*/
+
+.social-slogan {
+  width: 1443px;
+  height: 217px;
+  display: flex;
+
+}
+
+.social-network {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  height: 79px;
+  margin-left: 143px;
+  margin-top: 69px;
+  margin-right: 69px;
+}
+
+.slogan {
+  text-align: left;
+  margin-top: 78px;
+  margin-right: 356px;
+  margin-left: 139px;
+}
+
+.slogan h2 {
+  margin-bottom: 12px;
 }
