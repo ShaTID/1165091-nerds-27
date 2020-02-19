@@ -24,7 +24,9 @@ a {
 
 .shop {
 	color: #40b684;
-	text-decoration: underline;
+  display: block;
+	border-bottom: 2px solid transparent;
+  border-color: #fb565a;
 }
 
 .catalog-price{
@@ -196,6 +198,7 @@ a {
 
 .order-info ul{
   padding: 0;
+  list-style: none;
 }
 
 .dash {
@@ -277,6 +280,8 @@ a {
 }
 
 .slider {
+  width: 261px;
+  height: 80px;
 	background-color: #f1f1f1;
 }
 
@@ -448,12 +453,6 @@ a {
 
 /* ----- Сеточные стили ----- */
 
-html,
-body {
-  min-width: 1122px;
-  min-height: 1750px;
-}
-
 .main-header {
   margin-left: 140px;
   margin-right: 140px;
@@ -469,30 +468,49 @@ body {
 .main-header-logo {
   width: 160px;
   height: 65px;
-  
 }
 
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 438px;
   padding-left: 202px;
   list-style: none;
 }
 
 .basket-navigation {
-  margin-right: 140;
-  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+
 
 /*Сфера деятельности*/
 
 .sphere {
   display: flex;
-  justify-content: space-between;
-  margin left: 140px;
-  margin-right: 200px;
-  margin-top: 80px;
+  justify-content: space-around;
+}
+
+.sphere p {
+  max-width: 239px;
+  flex-wrap: wrap;
+}
+
+/*О студии*/
+
+.about {
+  display: flex;
+}
+
+
+/*Партнеры*/
+
+.partners ul{
+  display: flex;
+  justify-content: space-around;
+
 }
 
 /*footer-flex*/
@@ -523,4 +541,28 @@ body {
 
 .slogan h2 {
   margin-bottom: 12px;
+}
+
+/*Каталог. Фильтры*/
+
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.sort {
+  display: flex;
+}
+/*
+.sort ul {
+  display: flex;
+  align-items: flex-end;
+}*/
+
+/*Карточки каталога*/
+
+.catalog {
+  width: 360px;
+  display: flex;
+  align-content: space-around;
 }
