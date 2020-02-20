@@ -582,4 +582,24 @@ a {
 
 .sort {
   display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.sort ul{
+  display: flex;
+
+}
+
+.catalog-list {
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 760px;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  width: 443px;
 }
