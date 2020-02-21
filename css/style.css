@@ -31,6 +31,8 @@ a {
 
 .catalog-price{
   background-color: #eeeeee;
+  width: 360px;
+  min-height: 231px;
   text-align: center;
   display: none;
 }
@@ -462,17 +464,16 @@ a {
 
 /* ----- Сеточные стили ----- */
 
+
 .main-header {
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-top: 49px;
-  margin-bottom: 36px;
+  width: 100%;
 }
 
 .main-navigation {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-bottom: 18px;
 }
 
 .main-header-logo {
@@ -485,7 +486,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 438px;
-  padding-left: 202px;
+
   list-style: none;
 }
 
@@ -497,6 +498,9 @@ a {
 .page-title {
   display: flex;
   margin: 0;
+  margin-bottom: 60px;
+  padding-top: 82px;
+  padding-bottom: 116px;
   justify-content: center;
 }
 
@@ -506,6 +510,8 @@ a {
 .slide-flex {
   display: flex;
   align-content: center;
+  background-color: #eeeeee;
+  background-image: url('img/background/grey-back.png');
 }
 
 .slides {
@@ -532,6 +538,7 @@ a {
 
 .about {
   display: flex;
+  justify-content: space-between;
 }
 
 
@@ -575,7 +582,7 @@ a {
 
 /*Каталог. Фильтры*/
 
-.filter {
+.test {
   display: flex;
   flex-direction: column;
 }
@@ -583,12 +590,13 @@ a {
 .sort {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+ 
 }
 
 .sort ul{
   display: flex;
-
+  justify-content: center;
+  flex-direction: center;
 }
 
 .catalog-list {
@@ -598,8 +606,14 @@ a {
   width: 760px;
 }
 
+/*пагинация*/
+
 .pagination-list {
   display: flex;
   justify-content: center;
-  width: 443px;
+margin-right: 11px;
+}
+
+.catalog-flex {
+  display:flex;
 }
