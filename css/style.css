@@ -40,6 +40,10 @@ a {
 /*Навигация/Главный Логотип/ ссылка на корзину*/
 
 .main-navigation {
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 140px;
+  padding-right: 140px;
   background-color: #eeeeee;
   background-image: url('img/background/grey-back.png');
   background-repeat: no-repeat;
@@ -496,6 +500,9 @@ a {
 }
 
 .page-title {
+  max-width: 1440px;
+  padding-left: 359px;
+  padding-right: 359px;
   display: flex;
   margin: 0;
   margin-bottom: 60px;
