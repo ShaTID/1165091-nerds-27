@@ -39,14 +39,25 @@ a {
 
 /*Навигация/Главный Логотип/ ссылка на корзину*/
 
-.main-navigation {
-  width: 100%;
-  max-width: 1440px;
-  padding-left: 140px;
-  padding-right: 140px;
+.main-header {
   background-color: #eeeeee;
   background-image: url('img/background/grey-back.png');
   background-repeat: no-repeat;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+.main-logo {
+  margin: auto;
 }
 
 .main-logo:hover,
@@ -59,6 +70,14 @@ a {
 
 .basket-link a {
   background-color: #a6a6a6;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 438px;
+  list-style: none;
 }
 
 .site-navigation,
@@ -83,17 +102,46 @@ a {
   color: #ababab;
 }
 
+.basket-navigation {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
 .basket-navigation svg {
   margin-right: 26px;
 }
 
+.page-title {
+  margin: auto;
+  display: flex;
+  padding-bottom: 116px;
+  justify-content: center;
+}
 
 
-/*Слайдs и слайдер*/
+/*---слайдер---*/
 
 .slider {
   width: 261px;
   height: 80px;
+}
+
+/*---Слайды---*/
+
+.slide-flex {
+  display: flex;
+  align-content: center;
+  background-color: #eeeeee;
+  background-image: url('img/background/grey-back.png');
+}
+
+.slides {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  /*временный отступ, что бы не склеивались слайды*/
+  margin-right: 40px;
 }
 
 .slides img{
@@ -110,12 +158,17 @@ a {
 
 /*Сфера деятельности*/
 
+
 .sphere {
   list-style: none;
   color: #000000;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 
@@ -124,6 +177,11 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.sphere p {
+  max-width: 239px;
+  flex-wrap: wrap;
 }
 
 /*Кнопки и цвет кнопок*/
@@ -187,6 +245,12 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.little-and-info {
+  margin: auto;
 }
 
 .about h3 {
@@ -224,6 +288,7 @@ a {
 
 .about-in-percent {
   font-size: 16px;
+  margin: auto;
 }
 
 .about-in-percent ul{
@@ -253,6 +318,9 @@ a {
 
 .partners ul{
   list-style: none;
+  margin: 124 auto 208;
+  display: flex;
+  justify-content: space-around;
 }
 
 .partners-logo {
@@ -268,7 +336,18 @@ a {
   opacity: 0.1;
 }
 
-/*Страница Catalog*/
+/*___________________________________*/
+/*========Страница Catalog===========*/
+/*-----------------------------------*/
+
+
+
+/*Фильтры и каталог*/
+
+.filter-all {
+  display: flex;
+  flex-direction: column;
+}
 
 .page-title {
 	font-size: 55px;
@@ -278,6 +357,10 @@ a {
 	background-color: #eeeeee;
   background-image: url('img/background/grey-back.png');
   background-repeat: repeat;
+}
+
+.filter {
+  margin: 63px auto;
 }
 
 .filter fieldset {
@@ -320,6 +403,11 @@ a {
   border:none;
 }
 
+.sort {
+  display: flex;
+  justify-content: space-around;
+}
+
 .sort a{
 	font-size: 14px;
 	font-weight: 400;
@@ -337,7 +425,13 @@ a {
 	color: #000000;
 }
 
-.browser{
+.sort ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: center;
+}
+
+.browser {
 	opacity: 0.12;
 }
 
@@ -345,6 +439,11 @@ a {
   list-style: none;
   background-color: #f8f8f8;
   border: 1px solid rgba(0, 1, 1, 0.1);
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 760px;
+  margin-right: 140px;
 }
 
 .product:hover .catalog-price{
@@ -372,9 +471,20 @@ a {
   color: #666666;
 }
 
+/*-----ПАГИНАЦИЯ-----*/
+
+
+
 .pagination-list {
   list-style: none;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 11px;
+}
+
+.catalog-flex {
+  display:flex;
 }
 
 .pagination-item a {
@@ -407,7 +517,6 @@ a {
 /*подвал*/
 
 .main-footer {
-  text-align: center;
   background-color: #ffffff;
 }
 
@@ -426,6 +535,11 @@ a {
 .social-network {
   list-style: none;
   text-align: left;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 260px;
+  height: 79px;
 }
 
 .circle {
@@ -448,15 +562,31 @@ a {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-.footer-contacts h2{
-  font-size: 36px;
+.footer-contacts {
+  width: 319px;
+  height: 308px;
+}
+.footer-contacts h3{
+  font-size: 18px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 30px;
 }
 
 .footer-contacts p{
-	line-height: 22px;
+	line-height: 18px;
 }
+
+.social-slogan {
+  width: 1443px;
+  height: 217px;
+  display: flex;
+}
+
+.slogan {
+  text-align: center;
+  margin: auto;
+}
+
 
 /*Форма обратной связи*/
 
@@ -464,163 +594,4 @@ a {
   font-weight: 700;
   line-height: 18px;
   display: none;
-}
-
-/* ----- Сеточные стили ----- */
-
-
-.main-header {
-  width: 100%;
-}
-
-.main-navigation {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-bottom: 18px;
-}
-
-.main-header-logo {
-  width: 160px;
-  height: 65px;
-}
-
-.site-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 438px;
-
-  list-style: none;
-}
-
-.basket-navigation {
-  display: flex;
-  align-items: center;
-}
-
-.page-title {
-  max-width: 1440px;
-  padding-left: 359px;
-  padding-right: 359px;
-  display: flex;
-  margin: 0;
-  margin-bottom: 60px;
-  padding-top: 82px;
-  padding-bottom: 116px;
-  justify-content: center;
-}
-
-
-/*Слайдs*/
-
-.slide-flex {
-  display: flex;
-  align-content: center;
-  background-color: #eeeeee;
-  background-image: url('img/background/grey-back.png');
-}
-
-.slides {
-  display: flex;
-  flex-direction: row-reverse;
-  /*временный отступ, что бы не склеивались*/
-  margin-right: 40px;
-}
-
-
-/*Сфера деятельности*/
-
-.sphere {
-  display: flex;
-  justify-content: space-around;
-}
-
-.sphere p {
-  max-width: 239px;
-  flex-wrap: wrap;
-}
-
-/*О студии*/
-
-.about {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-/*Партнеры*/
-
-.partners ul{
-  display: flex;
-  justify-content: space-around;
-
-}
-
-/*footer-flex*/
-
-.social-slogan {
-  width: 1443px;
-  height: 217px;
-  display: flex;
-
-}
-
-.social-network {
-  display: flex;
-  justify-content: space-between;
-  width: 260px;
-  height: 79px;
-  margin-left: 143px;
-  margin-top: 69px;
-  margin-right: 69px;
-}
-
-.slogan {
-  text-align: left;
-  margin-top: 78px;
-  margin-right: 356px;
-  margin-left: 139px;
-}
-
-.slogan h2 {
-  margin-bottom: 12px;
-}
-
-/*Каталог. Фильтры*/
-
-.test {
-  display: flex;
-  flex-direction: column;
-}
-
-.sort {
-  display: flex;
-  justify-content: space-around;
- 
-}
-
-.sort ul{
-  display: flex;
-  justify-content: center;
-  flex-direction: center;
-}
-
-.catalog-list {
-  display:flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 760px;
-}
-
-/*пагинация*/
-
-.pagination-list {
-  display: flex;
-  justify-content: center;
-margin-right: 11px;
-}
-
-.catalog-flex {
-  display:flex;
 }
