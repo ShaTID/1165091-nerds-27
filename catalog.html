@@ -85,11 +85,12 @@
       </nav>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
     </header>
-    <main>
-      <div class="main-style">
-      <div class="catalog-flex">
-      <section class="filter">
-        <div class="filter-all">
+
+<main>
+    <div class="main-style"> <!--Отступы-->
+    <div class="catalog-flex">
+    <section class="filter">
+        <div class="filter-all"> <!--Фильтры без сортировки-->
       	    <h2 class="visually-hidden">Фильтр списка</h2>
       	    <!--<form method="get" action="https://echo.htmlacademy.ru"> 
               <fieldset>
@@ -163,11 +164,14 @@
               </ul>
               </fieldset>
                   <button class="filter-show" type="submit">Показать</button>
-      </form>
-    </div>
-     <div class="sort-and-catalog">
+        </form>
+        </div>
+    </section>
+
+    <div class="sort-and-catalog">
+    <section>
         <div class="sort">
-      	<p>Сортировать:</p>
+      	 <p>Сортировать:</p>
               <ul>
                 <li><a href="">По цене</a></li>
                 <li><a href="">По типу</a></li>
@@ -180,12 +184,12 @@
                 </li>
               </ul>
         </div>
-        </section>
+    </section>
 
-      <section class="catalog">
+    <section class="catalog">
          <h2 class="visually-hidden">Список Товаров</h2>
            <ul class="catalog-list">
-             <li>
+            <li>
               <div class="product">
                <div class="browser">
                 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
@@ -211,9 +215,9 @@
                   <p><button type="button" class="button red">9 900РУБ.</button></p>
                 </div>
               </div>
-             </li>
+            </li>
 
-             <li>
+            <li>
               <div class="product">
                 <div class="browser">
                 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
@@ -225,7 +229,7 @@
                   <p><button type="button" class="button red">9 900РУБ.</button></p>
                 </div>
               </div>
-             </li>
+            </li>
 
             <li>
                <div class="product">
@@ -269,17 +273,19 @@
               </div>
             </li>
           </ul>
-        </div>
-          <ul class="pagination-list">
+      <!--Пагинация-->
+           <ul class="pagination-list">
             <li class="pagination-item pagination-item-current"><a>1</a></li> 
             <li class="pagination-item"><a href="">2</a></li>
             <li class="pagination-item"><a href="">3</a></li>
             <li class="pagination-item"><a href="">Следующая</a></li>
-          </ul>
-      </section>
+           </ul> 
+    </section>
     </div>
+
+  </div><!--закрыл каталог-флекс и мейн стайл-->
   </div>
-    </main>
+</main>
 
  <footer class="main-footer">
         <div class="block-maps">

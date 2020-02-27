@@ -242,12 +242,13 @@ a {
 
 .slide-flex {
   display: flex;
-  /*нужен размер всегоб блока*/
 }
 
 .slides {
   display: flex;
   flex-direction: row-reverse;
+  width: 1129px; 
+  height: 413px;
 
   /*временный отступ, что бы не склеивались слайды*/
   margin-right: 40px;
@@ -269,6 +270,7 @@ a {
 
 
 .sphere {
+  padding-top: 80px;
   list-style: none;
   color: #000000;
   font-size: 16px;
@@ -350,6 +352,7 @@ a {
 /* О студии*/
 
 .about {
+  padding-top: 122px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -447,27 +450,31 @@ a {
 /*========Страница Catalog===========*/
 /*-----------------------------------*/
 
-
-
-/*Фильтры и каталог*/
-
-.filter-all {
-  display: flex;
-  flex-direction: column;
-}
-
+/*Надпись в шапке*/
 .page-title {
-	font-size: 55px;
-	font-weight: 500;
-	line-height: 55px;
-	color: #000000;
-	background-color: #eeeeee;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #000000;
+  background-color: #eeeeee;
   background-image: url('img/background/grey-back.png');
   background-repeat: repeat;
 }
 
+/*Фильтры и каталог*/
+
+/*.filter-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}*/
+
+.catalog-flex {
+  display:flex;
+}
+
 .filter {
-  margin: 63px auto;
+  margin-top: 63px;
 }
 
 .filter fieldset {
@@ -512,11 +519,13 @@ a {
 
 .sort-and-catalog {
   display: flex;
+  flex-direction: column;
+  margin-top: 60px;
 }
 
 .sort {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .sort a{
@@ -537,9 +546,9 @@ a {
 }
 
 .sort ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  flex-direction: center;
+  justify-content:  space-between;
 }
 
 .browser {
@@ -554,7 +563,11 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 760px;
-  margin-right: 140px;
+  margin-right: 140px;*/
+}
+
+.product p {
+  margin: 0;
 }
 
 .product:hover .catalog-price{
@@ -585,17 +598,11 @@ a {
 /*-----ПАГИНАЦИЯ-----*/
 
 
-
 .pagination-list {
   list-style: none;
   text-decoration: none;
   display: flex;
-  justify-content: center;
   margin-right: 11px;
-}
-
-.catalog-flex {
-  display:flex;
 }
 
 .pagination-item a {
@@ -647,7 +654,8 @@ a {
   list-style: none;
   text-align: left;
   display: flex;
-  margin: auto;
+  margin-left: 140px;
+
   justify-content: space-between;
   width: 260px;
   height: 79px;
@@ -691,11 +699,12 @@ a {
   width: 1443px;
   height: 217px;
   display: flex;
+  justify-content: space-between;
 }
 
 .slogan {
   text-align: center;
-  margin: auto;
+  margin-right: 140px;
 }
 
 
