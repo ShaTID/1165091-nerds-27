@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
- <!--ползунок-->   
+ <!--ползунок--   
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -59,7 +59,7 @@
       	if(!/\d/.test(keyChar)) return false;
        });
       });
-    </script>
+    </script>-->
   </head>
   <body>
     <header class="main-header">
@@ -86,11 +86,12 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
     </header>
     <main>
+      <div class="main-style">
       <div class="catalog-flex">
       <section class="filter">
         <div class="filter-all">
       	    <h2 class="visually-hidden">Фильтр списка</h2>
-      	    <form method="get" action="https://echo.htmlacademy.ru"> 
+      	    <!--<form method="get" action="https://echo.htmlacademy.ru"> 
               <fieldset>
       	      <legend>Стоимость:</legend>
               <div class="slider" id="slider-range"></div>
@@ -99,7 +100,23 @@
                <input type="text" id="amount" name="price-from">
                <label for="amount_1">До:</label>
                <input type="text" id="amount_1" name="price-before">
-              </p>
+              </p>-->
+              <form method="get" action="https://echo.htmlacademy.ru">
+              <fieldset class="filter-item">
+                <legend>Стоимость:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+                  </div>
+                </div>
               </fieldset>
 
               <fieldset>
@@ -148,6 +165,7 @@
                   <button class="filter-show" type="submit">Показать</button>
       </form>
     </div>
+     <div class="sort-and-catalog">
         <div class="sort">
       	<p>Сортировать:</p>
               <ul>
@@ -259,6 +277,8 @@
             <li class="pagination-item"><a href="">Следующая</a></li>
           </ul>
       </section>
+    </div>
+  </div>
     </main>
 
  <footer class="main-footer">
