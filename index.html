@@ -6,6 +6,48 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet"> 
+    <!--скрипт карты-->
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script>
+  ymaps.ready(init);
+
+  function init () {
+      var myMap = new ymaps.Map("map", {
+          // Координаты центра карты
+          center:[59.939034783290936,30.32326835653081],
+          // Масштаб карты
+          zoom: 17,
+          // Выключаем все управление картой
+          controls: []
+      }); 
+              
+      var myGeoObjects = [];
+      
+      // Указываем координаты метки
+      myGeoObjects = new ymaps.Placemark([59.93853143250099,30.32419640084996],{
+                      balloonContentBody: 'Офис компании \'NЁRDS\'',
+                      },{
+                      iconLayout: 'default#image',
+                      // Путь до нашей картинки
+                      iconImageHref: 'img/map-marker.png', 
+                      // Размеры иконки
+                      iconImageSize: [231, 190],
+                      // Смещение верхнего угла относительно основания иконки
+                      iconImageOffset: [-155, -210]
+      });
+                  
+      var clusterer = new ymaps.Clusterer({
+          clusterDisableClickZoom: false,
+          clusterOpenBalloonOnClick: false,
+      });
+      
+      clusterer.add(myGeoObjects);
+      myMap.geoObjects.add(clusterer);
+      // Отключаем zoom
+      myMap.behaviors.disable('scrollZoom');
+  }
+  </script>
+
   </head>
   <body>
     <header class="main-header">
@@ -147,12 +189,13 @@
 </div>
     </main>
     
- <footer class="main-footer">
-        <div class="block-maps">
-          <a><img src="img/maps-and-marker.jpg" alt="Офис находится по адресу: Санкт-Петербург, ул. Б.Конюшенная, д.18/8. Индекс:191186" width="100%"></a>
-          <!--<p class="visually-hidden">Лого на карте</p>
-          <div class="map-marker"><img src="img/map-marker.png" width="100" height="100" alt="Маркер на карте"></div>-->
-        </div>
+<footer class="main-footer">
+        <div id='map' style='width:100%;height: 416px;' ></div>
+        <!--<div class="block-maps">
+          <a><img src="img/maps-and-marker.jpg" width="100%" alt="Офис находится по адресу: Санкт-Петербург, ул. Б.Конюшенная, д.18/8. Индекс:191186"></a>
+          <p class="visually-hidden">Лого на карте</p>
+          <div class="map-marker"><img src="img/map-marker.png" width="100" height="100" alt="Маркер на карте"></div>
+        </div> -->
         <div class="footer-contacts">
         <address>
            <h3>NЁRDS DESIGN STUDIO</h3>
@@ -178,7 +221,7 @@
                 <p>Cкидка 10% для друзей из социальных сетей</p>
             </div>
         </div>
-    </footer> 
+    </footer>  
 
 
 <!----Попап----->
