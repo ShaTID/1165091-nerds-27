@@ -251,7 +251,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
               </div>
                <p><img src="img/catalog/img-catalog/pink.jpg" width="360" height="576" alt="Сайт многогранного приложения Pink"></p>
-               <div class="catalog-price">
+                <div class="catalog-price">
                   <h2>PINK.APP</h2>
                   <p>Продуктовый лендинг приложения для iOS и Android</p>
                   <p><button type="button" class="button red">9 900РУБ.</button></p>
@@ -366,7 +366,7 @@
  
 <!--Попап-->
 
-   <div class="write-me">
+   <!--<div class="write-me">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <div>
@@ -385,7 +385,29 @@
 
         <a href="" aria-label="Закрыть"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></a>
        </form>
-    </div>
+    </div>-->
+
+<section class="modal modal-write">
+  <button class="modal-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+	<h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <div class="popup-all">
+        <label for="Contact-name">Ваше Имя:</label>
+        <input type="text" id="Contact-name" name="Name" placeholder="Имя Фамилия">
+        </div>
+        <div class="popup-all">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+        </div>
+        <div class="popup-all">
+            <label for="comment">Текст письма:</label>
+            <textarea id="comment" name="comment" rows="7" placeholder="В свободной форме"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+</section>
 
 </body>	
 </html>
