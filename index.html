@@ -77,6 +77,7 @@
           </ul>
          </nav>
         </header>
+
         <section class="slider">
           <div class="slider-controls">
             <label for="product-1">Первый</label>
@@ -91,7 +92,7 @@
                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
                <a class="button red" href="">Узнать больше</a>
             </div>
-               <img src="img/index/slider-index/slide1.png" width="300" height="200" alt="Телефончики">
+               <img src="img/index/slider-index/slide1.png" width="698" height="200" alt="Телефончики">
               </span>
             </li>
             <li class="slider-item slide" id="slide2">
@@ -101,7 +102,7 @@
                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                <a class="button red" href="">Узнать больше</a>
             </div>
-               <img src="img/index/slider-index/slide2.png" width="300" height="200" alt="Мониторы">
+               <img src="img/index/slider-index/slide2.png" width="698" height="200" alt="Мониторы">
               </span>
             </li>
             <li class="slider-item slide" id="slide3">
@@ -111,11 +112,9 @@
                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                <a class="button red" href="">Узнать больше</a>
             </div>
-               <img src="img/index/slider-index/slide3.png" width="300" height="200" alt="Планшеты">
+               <img src="img/index/slider-index/slide3.png" width="698" height="200" alt="Планшеты">
               </span>
-            </li>
-            
-            
+            </li>      
           </ul>
         </section>
         </div>
@@ -182,14 +181,14 @@
         	</ul>
         </section>
 
-        <section>
+        <section class="about-option">
         <h2 class="visually-hidden">О студии</h2>
         <div class="about">
             <div class="little-and-info">
               <div class="little-studio">
-        	<h3>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
-        	<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
-        	Работаем не покладая рук, как роботы.</p>
+        	    <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
+        	    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива.
+        	    Работаем не покладая рук, как роботы.</p>
               </div>
               <div class="order-info">
         	<h4>Выполняем заказы на разработку:</h4>
@@ -252,6 +251,7 @@
            <button class="button red" type="button">Напишите нам</button>
         </address>
         </div>
+
         <div class="social-slogan">
             <ul class="social-network">
             <li><a class="circle" href="" aria-label="Вконтакте">
@@ -272,10 +272,10 @@
     </footer>  
 
 
-<!----Попап----->
+<!--Попап-->
 
-    <div class="write-me">
-      <h2 class="visually-hidden">Напишите нам</h2>
+   <!--<div class="write-me">
+      <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <div>
         <label for="Contact-name">Ваше Имя:</label>
@@ -289,11 +289,33 @@
             <label for="comment">Текст письма:</label>
             <textarea id="comment" name="comment" rows="7" placeholder="В свободной форме"></textarea>
         </div>
-        <button class="button button red" type="submit">Отправить</button>
+        <button type="submit">Отправить</button>
 
         <a href="" aria-label="Закрыть"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z"/></svg></a>
        </form>
-    </div>
+    </div>-->
+
+<section class="modal modal-write">
+  <button class="modal-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+    <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <div class="popup-all">
+        <label for="Contact-name">Ваше Имя:</label>
+        <input type="text" id="Contact-name" name="Name" placeholder="Имя Фамилия">
+        </div>
+        <div class="popup-all">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+        </div>
+        <div class="popup-all">
+            <label for="comment">Текст письма:</label>
+            <textarea id="comment" name="comment" rows="7" placeholder="В свободной форме"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+</section>
       
 </body>
 </html>

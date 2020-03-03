@@ -266,7 +266,9 @@ a {
 }
 
 .slider-list {
+  width: 1129;
   margin-left: 140px;
+  margin-right: 140px;
   padding: 0;
   
   list-style: none;
@@ -472,9 +474,17 @@ a {
 
 /* О студии*/
 
-.about {
+.about-option {
   margin-left: 140px;
+  margin-right: 140px;
   padding-top: 122px;
+
+  border-width: 1160px;
+  border-top: 2px solid;
+
+}
+
+.about {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -483,11 +493,11 @@ a {
 }
 
 .little-and-info {
-
+  width: 650px;
 }
 
+
 .about h3 {
-  width: 650px;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -495,11 +505,9 @@ a {
 
 .about p{
   color: #283136;
-  width: 616px;
 }
 
 .order-info {
-  width: 429px;
   color: #283136;
   font-size: 16px;
   line-height: 24px;
@@ -515,17 +523,33 @@ a {
   list-style: none;
 }
 
+.order-info li {
+  padding-top: 20px;
+}
+
 .dash {
   color: #fb565a;
 }
 
 .about-in-percent {
-  margin-right: 140px;
+  width: 360px;
 }
 
 .about-in-percent ul{
   list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.about-in-percent p {
+  padding-right: 25px;
+}
+
+.about-in-percent p: last-child {
+  padding-right: 0;
+}
+
 
 .year {
   width: 328px;
@@ -533,6 +557,7 @@ a {
   line-height: 24px;
   text-transform: uppercase;
 }
+
 
 .percent {
   font-size: 45px;
@@ -549,13 +574,16 @@ a {
 /*Партнеры*/
 
 .partners {
+  border-width: 1160px;
+  border-top: 2px solid;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 .partners ul{
   list-style: none;
-  margin: 124 auto 208;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .partners-logo {
@@ -646,54 +674,72 @@ a {
   left: -35px;
   top: 0px;
 
-  width: 16px;
-  height: 16px;
+  width: 25px;
+  height: 25px;
   
-  border: 2px solid #000000;
-  border-radius: 50%;
+  /*border: 4px solid #000000;
+  border-radius: 50%;*/
+
+  background-image: url('../img/svg/radio-off.svg');
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter-input-radio:checked + label::after {
   content: "";
 
   position: absolute;
-  top: 6px;
-  left: -29px;
+  top: 0px;
+  left: -35px;
 
-  width: 8px;
-  height: 8px;
+  width: 25px;
+  height: 25px;
 
-  background-color: #000000;
-  border-radius: 50%;
+  /*background-color: #000000;
+  border-radius: 50%;*/
+
+  background-image: url('../img/svg/radio-on.svg');
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter-input-checkbox + label::before{
   content: "";
-  position: absolute;
   left: -35px;
   top: 0;
 
-  width: 16px;
-  height: 16px;
+  position: absolute;
 
-  border: 2px solid #000000;
+  width: 23px;
+  height: 23px;
+
+  /*border: 2px solid #000000;*/
+
+  background-image: url('../img/svg/checkbox-off.svg');
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/*.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::after {
   content: "";
-  top: 4px;
-  left: -31px;
+  top: 0px;
+  left: -33px;
 
   position: absolute;
 
-  width: 12px;
-  height: 12px;
+  width: 23px;
+  height: 23px;
+
   
-  background-color: green;
+  /*background-color: green;*/
   background-image: url('../img/svg/checkbox-on.svg');
+  opacity: 0.4;
   background-repeat: no-repeat;
   background-position: center;
-}*/
+}
 
 .filter-search {
   margin-bottom: 15px;
@@ -788,6 +834,15 @@ a {
   opacity: 1.0;
 }
 
+.catalog-price {
+  position: absolute;
+  bottom: -120px;
+  left: 580px;
+  z-index: 1;
+  
+  font-size: 0;
+}
+
 .catalog-price h2{
   text-decoration: none;
   font-size: 18px;
@@ -855,6 +910,28 @@ a {
 
 .main-footer {
   background-color: #ffffff;
+}
+
+
+.footer-contacts {
+  width: 319px;
+  position: absolute;
+  background-color: #ffffff;
+  bottom: -1090px;
+  left: 140px;
+  z-index: 1;
+
+}
+
+.footer-contacts address {
+  text-align: center;
+  margin-top: 54px
+}
+
+.footer-contacts button {
+  margin-top: 35px;
+  width: 219px;
+  height: 50px;
 }
 
 .address h3{
@@ -930,7 +1007,82 @@ a {
 /*Форма обратной связи*/
 
 .write-me {
+  display: none;
+  /*position: fixed;
+
   font-weight: 700;
   line-height: 18px;
+
+  width: 960px;
+  height: 590px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+
+  margin-left: 240px;
+  margin-right: 240px;
+
+  padding-bottom: 60px;*/
+}
+
+.modal {
+  position: fixed;
+  
+  color: #000000;
+
+  background-color: #f8f3f0;
+  width: 960px;
+  height: 590px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+
+}
+
+.modal-write {
   display: none;
+  top: 120px;
+  left: 240px;
+  right: 240px;
+  padding: 50px 80px;
+}
+
+.modal-close {
+  width: 21px;
+  height: 21px;
+
+  position: absolute;
+  top: 78;
+  right: 90px;
+
+
+  /*background-color: black;*/
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+
+  width: 21px;
+  height: 21px;
+
+  background-image: url('../img/svg/close-cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-write h2 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.popup-all {
+  line-height: 1.13;
+  font-size: 16px;
+  font-weight: bold;
 }
