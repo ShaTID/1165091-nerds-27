@@ -59,6 +59,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding-bottom: 18px;
+  padding-top: 49px;
 }
 
 .main-logo {
@@ -260,13 +261,13 @@ a {
 
 .slider {
   position: relative;
+  width: 1129px;
   padding-top: 18px;
-  text-align: center;
+  /*text-align: center;*/
   color: #000000;
 }
 
 .slider-list {
-  width: 1129;
   margin-left: 140px;
   margin-right: 140px;
   padding: 0;
@@ -276,14 +277,14 @@ a {
 
 .slider-controls label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
-  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  margin-right: 17px;
 
   vertical-align: top;
 
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #c1c1c1;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -291,8 +292,8 @@ a {
 .slider-controls {
   position: absolute;
   display: flex;
-  bottom: -350px;
-  left: 700px;
+  bottom: -280px;
+  left: 745px;
   z-index: 1;
   
   font-size: 0;
@@ -316,27 +317,34 @@ a {
 
 .slide-title {
   display: flex;
+  /*justify-content: space-between;*/
 }
 
 .slide-title img {
   margin-left: 55px;
-  width: 698px;
+  width: 759px;
   height: 413px;
 }
 
 .slide-title h3 {
+  min-width: 517px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
 }
 
 .flex-slide {
-  min-width: 376px;
-  height: 106px;
-  font-stretch: normal;
   text-align: left;
 }
 
+.flex-slide p {
+  min-width: 360px;
+  padding-bottom: 40px
+}
+
+.flex-slide a {
+  padding: 19px 39px 18px 39px;
+}
 
 /*
 .back-slides {
@@ -413,8 +421,13 @@ a {
 }
 
 .sphere p {
-  max-width: 239px;
+  width: 250px;
   flex-wrap: wrap;
+}
+
+.sphere button {
+  width: 160px;
+  height: 50px;
 }
 
 /*Кнопки и цвет кнопок*/
@@ -477,10 +490,11 @@ a {
 .about-option {
   margin-left: 140px;
   margin-right: 140px;
-  padding-top: 122px;
+  padding-top: 61px;
+  margin-top: 61px;
 
   border-width: 1160px;
-  border-top: 2px solid;
+  border-top: 2px solid #eeeeee;
 
 }
 
@@ -574,10 +588,12 @@ a {
 /*Партнеры*/
 
 .partners {
-  border-width: 1160px;
-  border-top: 2px solid;
+  border-top-width: 1160px;
+  border-top: 2px solid #eeeeee;
   margin-left: 140px;
   margin-right: 140px;
+  margin-top: 77px;
+  padding-top: 46px;
 }
 
 .partners ul{
@@ -915,12 +931,15 @@ a {
   background-color: #ffffff;
 }
 
+.maps {
+  position: relative;
+}
 
 .footer-contacts {
   width: 319px;
   position: absolute;
   background-color: #ffffff;
-  bottom: -1090px;
+  bottom: 54px;
   left: 140px;
   z-index: 1;
 
@@ -999,6 +1018,7 @@ a {
   height: 217px;
   display: flex;
   justify-content: space-between;
+  margin-top: 69px;
 }
 
 .slogan {
@@ -1081,7 +1101,7 @@ a {
 .modal-write h2 {
   font-size: 45px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 2;
 }
 
 .popup-all {
