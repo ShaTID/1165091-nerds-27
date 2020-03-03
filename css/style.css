@@ -243,6 +243,8 @@ a {
   background-image: url("img/background/grey-back.png");
   background-repeat: no-repeat;
   background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper::before,
