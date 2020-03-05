@@ -30,6 +30,8 @@ a {
 }
 
 .catalog-price {
+  padding: 0;
+
   background-color: #eeeeee;
   width: 360px;
   min-height: 231px;
@@ -452,9 +454,7 @@ a {
 }
 
 .about {
-  font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
   display: flex;
   justify-content: space-between;
 }
@@ -481,11 +481,13 @@ a {
 }
 
 .order-info h4{
+  margin: 0px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .order-info ul{
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -543,10 +545,16 @@ a {
 .partners {
   border-top-width: 1160px;
   border-top: 2px solid #eeeeee;
-  margin-left: 140px;
-  margin-right: 140px;
   margin-top: 77px;
   padding-top: 46px;
+
+  border-bottom-width: 1160px;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 44px;
+  margin-bottom: 80px;
+
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 .partners ul{
@@ -910,8 +918,11 @@ a {
 }
 
 .footer-contacts address {
-  text-align: center;
-  margin-top: 54px
+  padding: 0px;
+  font-style: normal;
+  text-align: left;
+  margin-top: 54px;
+  margin-left: 50px;
 }
 
 .footer-contacts button {
@@ -1010,7 +1021,7 @@ a {
 }
 
 .modal-write {
-  display: none;
+  /*display: none;*/
   top: 120px;
   left: 240px;
   right: 240px;
