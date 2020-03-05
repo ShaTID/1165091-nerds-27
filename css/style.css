@@ -350,57 +350,6 @@ a {
   padding: 19px 39px 18px 39px;
 }
 
-/*
-.back-slides {
-  background-color: #eeeeee;
-  background-image: url('img/background/grey-back.png');
-  background-repeat: no-repeat;
-}*/
-/*
-.slider-controls label {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  margin-right: 8px;
-
-  vertical-align: top;
-
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.slider-controls {
-  position: absolute;
-  bottom: 500px;
-  left: 100;
-  z-index: 30;
-}*/
-/*
-.slides {
-  display: none;
-}*/
-  
-  /*font-size: 0;*/
-
-/*.slide-flex {
-  display: flex;
-}*/
-
-
-/*.slides {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 1129px; 
-  height: 413px;
-}
-*/
-
-
-
-
-
 /*Сфера деятельности*/
 
 
@@ -646,8 +595,6 @@ a {
 }
 
 .filter-search {
-  /*background: rgba(0, 128, 0, 0.2);
-  box-shadow: 0 0 0 3px green;*/
   margin-bottom: 17px;
   padding-left: 35px;
 }
@@ -695,9 +642,6 @@ a {
 
   width: 25px;
   height: 25px;
-  
-  /*border: 4px solid #000000;
-  border-radius: 50%;*/
 
   background-image: url('../img/svg/radio-off.svg');
   opacity: 0.4;
@@ -715,9 +659,6 @@ a {
   width: 25px;
   height: 25px;
 
-  /*background-color: #000000;
-  border-radius: 50%;*/
-
   background-image: url('../img/svg/radio-on.svg');
   opacity: 0.4;
   background-repeat: no-repeat;
@@ -734,7 +675,6 @@ a {
   width: 23px;
   height: 23px;
 
-  /*border: 2px solid #000000;*/
 
   background-image: url('../img/svg/checkbox-off.svg');
   opacity: 0.4;
@@ -954,6 +894,9 @@ a {
 
 .maps {
   position: relative;
+  background-image: url("../img/maps-and-marker.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .footer-contacts {
@@ -1052,19 +995,6 @@ a {
 
 .write-me {
   display: none;
-  /*position: fixed;
-
-  font-weight: 700;
-  line-height: 18px;
-
-  width: 960px;
-  height: 590px;
-  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-
-  margin-left: 240px;
-  margin-right: 240px;
-
-  padding-bottom: 60px;*/
 }
 
 .modal {

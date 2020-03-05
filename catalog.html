@@ -48,60 +48,6 @@
 
   }
   </script>
- <!--ползунок--   
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      $( "#slider-range" ).slider({
-        step: 250,
-        range: true,
-        min: 0,
-        max: 15000,
-        values: [ 250, 15000 ],
-        slide: function( event, ui ) {
-          $( "#amount" ).val(ui.values[ 0 ] );
-          $( "#amount_1" ).val(ui.values[ 1 ] );
-        }
-      });
-      $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) );
-      $( "#amount_1" ).val( $( "#slider-range" ).slider( "values", 1 ) );
-      //Первая ячейка ползунка
-      $("input#amount").change(function(){
-      	var value1=$("input#amount").val();
-      	var value2=$("input#amount_1").val();
-      	  if(parseInt(value1) > parseInt(value2)){
-      	  	value1 = value2;
-      	  	$("input#amount").val(value1);
-      	  } 
-      	  $("#slider-range").slider("values",0,value1);
-      })
-      //Вторая ячейка ползунка
-      $("input#amount_1").change(function(){
-      	var value1=$("input#amount").val();
-      	var value2=$("input#amount_1").val();
-      	  if(parseInt(value1) > parseInt(value2)){
-      	  	value2 = value1;
-      	  	$("input#amount_1").val(value1);
-      	  } 
-      	  $("#slider-range").slider("values",1,value2);
-       })
-      //Фильтрация ввода
-      jQuery('#amount, #amount_1').keypress(function(event){
-      	var key, keyChar;
-      	if(!event) var event = window.event;
-
-      	if (event.keyCode) key = event.keyCode;
-      	else if (event.which) key = event.which;
-
-      	if(key==null || key==0 || key==8 || key==13 || key==9 || key==46 || key==37 || key==39 )
-      		return true;
-      	keyChar=String.fromCharCode(key);
-      	if(!/\d/.test(keyChar)) return false;
-       });
-      });
-    </script>-->
   </head>
   <body>
     <header class="main-header">
@@ -134,16 +80,7 @@
     <section class="filter">
         <div class="filter-all"> <!--Фильтры без сортировки-->
       	    <h2 class="visually-hidden">Фильтр списка</h2>
-      	    <!--<form method="get" action="https://echo.htmlacademy.ru"> 
-              <fieldset>
-      	      <legend>Стоимость:</legend>
-              <div class="slider" id="slider-range"></div>
-              <p>
-               <label for="amount">От:</label>
-               <input type="text" id="amount" name="price-from">
-               <label for="amount_1">До:</label>
-               <input type="text" id="amount_1" name="price-before">
-              </p>-->
+      	 
               <form method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="filter-item">
                 <legend>Стоимость:</legend>
@@ -329,12 +266,7 @@
 </main>
 
  <footer class="main-footer">
-      <div class="maps" id="map" style='width:100%;height: 416px;' >
-        <!--<div class="block-maps">
-          <a><img src="img/maps-and-marker.jpg" width="100%" alt="Офис находится по адресу: Санкт-Петербург, ул. Б.Конюшенная, д.18/8. Индекс:191186"></a>
-          <p class="visually-hidden">Лого на карте</p>
-          <div class="map-marker"><img src="img/map-marker.png" width="100" height="100" alt="Маркер на карте"></div>
-        </div> -->
+      <div class="maps" id="map" style='width:100%;height: 416px;'>
         <div class="footer-contacts">
         <address>
            <h3>NЁRDS DESIGN STUDIO</h3>
