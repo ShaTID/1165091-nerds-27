@@ -263,19 +263,21 @@
   </button>
     <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
+       <div class="name-email">
         <div class="popup-all">
         <label for="Contact-name">Ваше Имя:</label>
-        <input type="text" id="Contact-name" name="Name" placeholder="Имя Фамилия">
+        <input class="contact-name" type="text" id="contact-name" name="Name" placeholder="Имя Фамилия">
         </div>
         <div class="popup-all">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="email@example.com">
+            <label for="email">Email:</label>
+            <input class="email" type="email" id="email" name="email" placeholder="email@example.com">
         </div>
+       </div>
         <div class="popup-all">
             <label for="comment">Текст письма:</label>
-            <textarea id="comment" name="comment" rows="7" placeholder="В свободной форме"></textarea>
+            <textarea class="comment" id="comment" name="comment" rows="7" placeholder="В свободной форме"></textarea>
         </div>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="button red" id="butred">Отправить</button>
       </form>
 </section>
       
