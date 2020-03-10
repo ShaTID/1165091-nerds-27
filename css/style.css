@@ -276,9 +276,7 @@ a {
 
 .slider {
   position: relative;
-  /*width: 1129px;*/
   width: 100%;
-  /*text-align: center;*/
   color: #000000;
 }
 
@@ -333,7 +331,6 @@ a {
 
 .slide-title {
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .slide-title img {
