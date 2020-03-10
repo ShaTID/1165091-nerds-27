@@ -93,6 +93,7 @@ a {
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   min-width: 438px;
   list-style: none;
@@ -337,6 +338,8 @@ a {
   margin-left: 55px;
   width: 759px;
   height: 413px;
+  flex-grow: 1;
+
 }
 
 .slide-title h3 {
@@ -381,6 +384,7 @@ a {
   font-weight: 400;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .sphere h3 {
@@ -592,6 +596,12 @@ a {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.line {
+  border-right: 2px solid #eeeeee;
+  padding-right: auto;
 }
 
 .partners-logo {
@@ -1155,10 +1165,18 @@ a {
   opacity: 0.3;
 
   position: absolute;
-  /*top: 78;*/
   right: 90px;
   border: 0;
   cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1.0;
+}
+
+.modal-close:active {
+  opacity: 0.1;
 }
 
 .modal-close::before,
