@@ -1152,13 +1152,12 @@ a {
 .modal-close {
   width: 21px;
   height: 21px;
+  opacity: 0.3;
 
   position: absolute;
-  top: 78;
+  /*top: 78;*/
   right: 90px;
-
   border: 0;
-
   cursor: pointer;
 }
 
@@ -1180,16 +1179,16 @@ a {
 }
 
 .modal-write h2 {
+  margin: 0;
   font-size: 45px;
   font-weight: 500;
-  line-height: 2;
 }
 
 .popup-all {
   line-height: 1.13;
   font-size: 16px;
   font-weight: bold;
-  padding-top: 36px;
+  padding-top: 49px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1205,6 +1204,7 @@ a {
 }
 
 .comment {
+  margin-top: 12px;
   width: 100%;
   height: 118px;
   border: solid 2px #d7dcde;
@@ -1214,6 +1214,7 @@ a {
 .name-email {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 #butred {
