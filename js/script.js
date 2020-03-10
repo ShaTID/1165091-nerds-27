@@ -38,7 +38,7 @@
       myMap.behaviors.disable('scrollZoom');
   }
 
-
+/*--------------------*/
   /*=====ПОПАП=====*/
  
   var link = document.querySelector(".mod");
