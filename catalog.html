@@ -10,6 +10,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="container">
       <nav class="main-navigation">
         <div class="main-logo">
         <a href="index.html">
@@ -31,12 +32,15 @@
         </ul>
       </nav>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
+    </div>
     </header>
 
 <main>
+  <div class="container">
     <div class="main-style"> <!--Отступы-->
     <div class="catalog-flex">
     <section class="filter">
+      <div class="container-filter">
         <div class="filter-all"> <!--Фильтры без сортировки-->
       	    <h2 class="visually-hidden">Фильтр списка</h2>
       	 
@@ -104,10 +108,12 @@
                   <button class="filter-show" type="submit">Показать</button>
         </form>
         </div>
+      </div>
     </section>
 
     <div class="sort-and-catalog">
     <section>
+      <div class="container-sort-catalog">
         <div class="sort">
       	 <p>Сортировать:</p>
               <ul>
@@ -122,9 +128,11 @@
                 </li>
               </ul>
         </div>
+      </div>
     </section>
 
     <section class="catalog">
+      <div class="container-sort-catalog">
          <h2 class="visually-hidden">Список Товаров</h2>
            <ul class="catalog-list">
             <li>
@@ -218,23 +226,29 @@
             <li class="pagination-item"><a href="">3</a></li>
             <li class="pagination-item"><a href="">Следующая</a></li>
            </ul> 
+         </div>
     </section>
     </div>
   </div><!--закрыл каталог-флекс и мейн стайл-->
   </div>
+</div>
 </main>
 
- <footer class="main-footer">
-      <div class="maps" id="map" style='width:100%;height: 416px;'>
+<footer class="main-footer">
+
+      <div class="maps" id="map" style='width:100%;height: 416px;' >
         <div class="footer-contacts">
+      <div class="container-fc">
         <address>
            <h3>NЁRDS DESIGN STUDIO</h3>
            <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 18/8</p>
            <p>тел. +7(812) 275-75-75</p>
            <button class="button mod" type="button">Напишите нам</button>
         </address>
+      </div>
         </div>
       </div>
+      <div class="container-footer">
         <div class="social-slogan">
             <ul class="social-network">
             <li><a class="circle" href="" aria-label="Вконтакте">
@@ -252,12 +266,14 @@
                 <p>Cкидка 10% для друзей из социальных сетей</p>
             </div>
         </div>
-    </footer> 
+      </div>
+    </footer>  
 
 <!--==========================-->
 <!--Попап/форма обратной связи-->
 
 <section class="modal modal-write">
+  <div class="container-popup">
   <button class="modal-close" type="button">
     <span class="visually-hidden">Закрыть</span>
   </button>
@@ -265,7 +281,7 @@
       <form action="https://echo.htmlacademy.ru/courses" method="post">
        <div class="name-email">
         <div class="popup-all">
-        <label for="Contact-name">Ваше Имя:</label>
+        <label for="contact-name">Ваше Имя:</label>
         <input class="contact-name" type="text" id="contact-name" name="name" placeholder="Имя Фамилия">
         </div>
         <div class="popup-all">
@@ -279,6 +295,7 @@
         </div>
         <button type="submit" class="button red" id="butred">Отправить</button>
       </form>
+    </div>
 </section>
 
 <script src="js/script.js"></script>
