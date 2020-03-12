@@ -1,14 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  /*max-width: 1160px;
-  margin: 0 auto;
-  overflow: auto;*/
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
   background-color: #ffffff;
 }
@@ -17,26 +14,13 @@ a {
   text-decoration: none;
 }
 
-.container-slide,
-.container,
-.container-about,
-.container-footer {
-  max-width: 1160px;
-  margin: 0 auto;
-}
-
-.container-sphere {
+.container-width {
   max-width: 1160px;
   margin: 0 auto;
 }
 
 .container-partners {
   max-width: 1086px;
-  margin: 0 auto;
-}
-
-.container-popup {
-  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -52,6 +36,11 @@ a {
 
 .container-sort-catalog {
   max-width: 759px;
+  margin: 0 auto;
+}
+
+.container-popup {
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -149,6 +138,7 @@ a {
 .site-navigation a,
 .basket-navigation a {
   color: #000000;
+  line-height: 1.88;
 }
 
 .site-navigation a:hover,
@@ -165,7 +155,7 @@ a {
 
 .basket-navigation {
   display: flex;
-  /*margin-right: 140px;*/
+
   align-items: center;
 }
 
@@ -297,7 +287,6 @@ a {
   background-color: #eeeeee;
   background-image: url("img/background/grey-back.png");
   background-repeat: no-repeat;
-  /*background-position: top center;*/
   padding-bottom: 49px;
 
   transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -319,15 +308,13 @@ a {
 
 .slider {
   position: relative;
-  width: 1129px;
   color: #000000;
 }
 
 .slider-list {
   padding: 0px;
   margin: 0px;
-  /*margin-left: 140px;
-  margin-right: 140px;*/
+  width: 1129px;
   
   list-style: none;
 }
@@ -377,7 +364,6 @@ a {
 }
 
 .slide-title img {
-  /*margin-left: 55px;*/
   min-width: 663px;
   height: 413px;
   flex-grow: 1;
@@ -386,9 +372,11 @@ a {
 }
 
 .slide-title h3 {
-  min-width: 517px;
+  margin: 0;
+  padding-top: 82px;
+  padding-bottom: 28px;
+  width: 521px;
   font-size: 55px;
-  font-weight: 500;
   line-height: 55px;
 }
 
@@ -398,8 +386,10 @@ a {
 }
 
 .flex-slide p {
+  margin: 0;
   min-width: 360px;
-  padding-bottom: 40px
+  padding-bottom: 40px;
+  line-height: 1.5;
 }
 
 .flex-slide a {
@@ -555,7 +545,11 @@ a {
 .about h3 {
   font-size: 45px;
   font-weight: 500;
-  line-height: 45px;
+  line-height: 1;
+}
+
+.little-studio {
+  line-height: 1.5;
 }
 
 .about p{
@@ -1028,16 +1022,20 @@ a {
   background-color: #d5d5d5;
 }
 
-
 /*==========================*/
-/*=========FOOTER===========*/
-/*==========================*/
+/*============MAP===========*/
 
-.main-footer {
-  background-color: #ffffff;
-  /*width: 1160px;
-  margin: 0 auto;*/
-}
+/*.main-map {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+}*/
+
+/*.test {
+  position: relative;
+  width: 1160px;
+  margin: 0 auto;
+}*/
 
 .maps {
   position: relative;
@@ -1050,9 +1048,8 @@ a {
   position: absolute;
   background-color: #ffffff;
   bottom: 54px;
-  left: 260px;
+  /*left: 260px;*/
   z-index: 1;
-
 }
 
 .footer-contacts address {
@@ -1070,14 +1067,26 @@ a {
 }
 
 .address h3{
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 .address p{
-	line-height: 18px;
+  line-height: 18px;
 }
+
+/*==========================*/
+/*=========FOOTER===========*/
+/*==========================*/
+
+.main-footer {
+  background-color: #ffffff;
+  /*width: 1160px;
+  margin: 0 auto;*/
+}
+
+
 
 /*Ссыки на соц сети*/
 
@@ -1200,12 +1209,10 @@ a {
   color: #000000;
 
   background-color: #ffffff;
-  width: 960px;
-  height: 590px;
+  max-width: 960px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   z-index: 5;
-  /*margin: auto auto;*/
-
+  margin: auto;
 }
 
 .modal-write {
@@ -1253,7 +1260,6 @@ a {
   top: 0px;
   left: 0px;
 
-
   width: 21px;
   height: 21px;
 
@@ -1281,7 +1287,7 @@ a {
 
 .contact-name,
 .email {
-  min-width: 360px;
+  width: 360px;
   height: 50px;
   border: solid 2px #d7dcde;
   margin-top: 12px;
