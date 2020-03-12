@@ -26,7 +26,7 @@ a {
 }
 
 .container-sphere {
-  max-width: 1100px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -41,7 +41,7 @@ a {
 }
 
 .container-fc {
-  max-width:319px;
+  width:319px;
   margin: 0 auto;
 }
 
@@ -418,17 +418,27 @@ a {
 .sphere {
   margin: 0px;
   padding: 0px;
-  padding-top: 80px;
-  /*margin-left: 140px;
-  margin-right: 140px;*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sphere-item {
   list-style: none;
+  padding-top: 80px;
   color: #000000;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+}
+
+.item-block {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.item-block:nth-child(3n) {
+  margin-right: 0;
 }
 
 .sphere h3 {
@@ -440,7 +450,6 @@ a {
 
 .sphere p {
   width: 250px;
-  flex-wrap: wrap;
 }
 
 .sphere button {
@@ -1026,6 +1035,8 @@ a {
 
 .main-footer {
   background-color: #ffffff;
+  /*width: 1160px;
+  margin: 0 auto;*/
 }
 
 .maps {
@@ -1071,14 +1082,24 @@ a {
 /*Ссыки на соц сети*/
 
 .social-network {
-  list-style: none;
-  /*text-align: left;*/
   display: flex;
-  /*margin-left: 140px;*/
+  flex-wrap: wrap;
+  width: 261px;
+  margin: 0;
+  padding: 0;
+}
 
-  justify-content: space-between;
-  width: 260px;
-  height: 79px;
+.social-item {
+  list-style: none;
+}
+
+.item-social {
+  width: 79px;
+  margin-right: 12px;
+}
+
+.item-social:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .circle {
@@ -1122,6 +1143,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 69px;
+  margin-bottom: 69px;
 }
 
 .slogan {
