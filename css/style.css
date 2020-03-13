@@ -390,6 +390,7 @@ a {
   min-width: 360px;
   padding-bottom: 40px;
   line-height: 1.5;
+  color: #283136;
 }
 
 .flex-slide a {
@@ -521,8 +522,6 @@ a {
 /* О студии*/
 
 .about-option {
-  /*margin-left: 140px;
-  margin-right: 140px;*/
   padding-top: 61px;
   margin-top: 61px;
 
@@ -543,16 +542,25 @@ a {
 
 
 .about h3 {
+  margin: 0;
+  width: 668px;
   font-size: 45px;
-  font-weight: 500;
   line-height: 1;
+  margin-top: 40px;
+
 }
 
 .little-studio {
   line-height: 1.5;
 }
 
+.little-studio p{
+  padding-top: 35px;
+}
+
 .about p{
+  margin: 0;
+  line-height: 1.5;
   color: #283136;
 }
 
@@ -560,12 +568,14 @@ a {
   color: #283136;
   font-size: 16px;
   line-height: 24px;
+  line-height: 1.5;
 }
 
 .order-info h4{
   margin: 0px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-top: 47px;
 }
 
 .order-info ul{
@@ -593,20 +603,23 @@ a {
   justify-content: space-between;
 }
 
-.about-in-percent p {
+.percent-item {
+  margin: 0;
+}
+
+.percent-item p {
   padding-right: 25px;
 }
 
-.about-in-percent p: last-child {
+.percent-item p: last-child {
   padding-right: 0;
 }
-
 
 .year {
   width: 328px;
   font-weight: 700;
-  line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 
@@ -614,12 +627,13 @@ a {
   font-size: 45px;
   font-weight: 700;
   line-height: 10.06px;
+  padding-top: 49px;
 }
 
 .percent-text {
-  color: #283136;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.13;
+  padding-top: 27px;
 }
 
 /*Партнеры*/
@@ -1070,10 +1084,13 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  width: 192px;
 }
 
 .address p{
+  color: #8f8f8f;
   line-height: 18px;
+  width: 200px;
 }
 
 /*==========================*/
@@ -1082,10 +1099,7 @@ a {
 
 .main-footer {
   background-color: #ffffff;
-  /*width: 1160px;
-  margin: 0 auto;*/
 }
-
 
 
 /*Ссыки на соц сети*/
@@ -1209,10 +1223,12 @@ a {
   color: #000000;
 
   background-color: #ffffff;
-  max-width: 960px;
+  width: 960px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   z-index: 5;
-  margin: auto;
+  /*padding-top: 73px;
+  padding-bottom: 84px;
+  margin-left: 100px;*/
 }
 
 .modal-write {
@@ -1220,7 +1236,7 @@ a {
   top: 120px;
   left: 240px;
   right: 240px;
-  margin: 73px 100px 84px 100px;*/
+  /*padding: 73px 100px 84px 100px;*/
 }
 
 .modal-show {
@@ -1239,6 +1255,7 @@ a {
 
   position: absolute;
   right: 90px;
+  top: 80px;
   border: 0;
   cursor: pointer;
 }
@@ -1270,8 +1287,11 @@ a {
 
 .modal-write h2 {
   margin: 0;
+  margin-top: 73px;
+  margin-left: 100px;
+
   font-size: 45px;
-  font-weight: 500;
+  line-height: 1;
 }
 
 .popup-all {
@@ -1288,7 +1308,6 @@ a {
   margin-right: 40px;
 }
 
-
 .contact-name,
 .email {
   width: 360px;
@@ -1297,8 +1316,13 @@ a {
   margin-top: 12px;
 }
 
+.popup-comment {
+  margin-left: 100px;
+}
+
 .comment {
   margin-top: 12px;
+  margin-left: 100px;
   max-width: 760px;
   height: 118px;
   border: solid 2px #d7dcde;
@@ -1306,10 +1330,9 @@ a {
 }
 
 .name-email {
+  margin-left: 100px;
   width: 768px;
   display: flex;
-  /*justify-content: space-between;*/
-  margin-top: 10px;
   flex-wrap: wrap;
 }
 
@@ -1317,5 +1340,7 @@ a {
   width: 260px;
   height: 50px;
   margin-top: 47px;
+  margin-left: 100px;
+  margin-bottom: 84px;
 }
 
