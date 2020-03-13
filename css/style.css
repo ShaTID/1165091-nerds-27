@@ -41,7 +41,7 @@ a {
 
 .container-popup {
   width: 960px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .visually-hidden {
@@ -1220,7 +1220,7 @@ a {
   top: 120px;
   left: 240px;
   right: 240px;
-  padding: 73px 100px 84px 100px;
+  margin: 73px 100px 84px 100px;*/
 }
 
 .modal-show {
@@ -1284,6 +1284,10 @@ a {
   justify-content: space-between;
 }
 
+.contact-name {
+  margin-right: 40px;
+}
+
 
 .contact-name,
 .email {
@@ -1295,16 +1299,18 @@ a {
 
 .comment {
   margin-top: 12px;
-  width: 100%;
+  max-width: 760px;
   height: 118px;
   border: solid 2px #d7dcde;
   resize: none;
 }
 
 .name-email {
+  width: 768px;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 #butred {
