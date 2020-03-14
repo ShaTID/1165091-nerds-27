@@ -79,18 +79,12 @@ a {
   color: #b2b2b2;
 }
 
-/*.main-style {
-  margin-left: 140px;
-  margin-right: 140px;
-}*/
-
 /*Навигация/Главный Логотип/ ссылка на корзину*/
 
 .main-header {
   background-color: #eeeeee;
   background-image: url('img/background/grey-back.png');
   background-repeat: no-repeat;
-
 }
 
 .main-header-logo {
@@ -101,7 +95,7 @@ a {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 18px;
+  /*padding-bottom: 18px;*/
   padding-top: 49px;
   text-transform: uppercase;
   font-weight: 700;
@@ -165,10 +159,11 @@ a {
 }
 
 .page-title {
-  margin: auto;
+  margin: 0;
   display: flex;
   padding-bottom: 116px;
   justify-content: center;
+  margin-top: 82px;
 }
 
 
@@ -462,6 +457,7 @@ a {
   text-transform: uppercase;
   background: #fb565a;
   border: none;
+  cursor: pointer;
 }
 
 .red {
@@ -591,6 +587,11 @@ a {
   color: #fb565a;
 }
 
+.year-percent {
+  font-size: 23px;
+  vertical-align: text-top;
+}
+
 .about-in-percent {
   width: 360px;
 }
@@ -621,8 +622,8 @@ a {
   text-align: center;
 }
 
-
 .percent {
+  padding: 0;
   font-size: 45px;
   font-weight: 700;
   line-height: 10.06px;
@@ -633,6 +634,7 @@ a {
   font-weight: 400;
   line-height: 1.13;
   padding-top: 27px;
+
 }
 
 /*Партнеры*/
@@ -803,13 +805,13 @@ a {
 
 .filter-input-checkbox:checked + label::before{
   content: "";
-  top: 1px;
-  left: -34px;
+  left: -35px;
+  top: 0px;
 
   position: absolute;
 
   width: 25px;
-  height: 21px;
+  height: 23px;
 
 
   background-image: url('../img/svg/checkbox-on.svg');
@@ -847,6 +849,7 @@ a {
   text-align: center;
   background-color: #eeeeee;
   border:none;
+  cursor: pointer;
 }
 
 .filter-show:hover,
@@ -962,8 +965,10 @@ a {
 }
 
 .catalog-price h2{
+  margin: 0;
   text-decoration: none;
   padding-top: 35px;
+  padding-bottom: 26px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -971,7 +976,15 @@ a {
   text-transform: uppercase;
 }
 
+
+.test p{
+  margin: 0;
+  width: 227px;
+  text-align: center;
+}
+
 .catalog-price p{
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -990,13 +1003,15 @@ a {
   list-style: none;
   text-decoration: none;
   display: flex;
-  margin-right: 11px;
   margin-top: 20px;
   margin-bottom: 60px;
 }
 
 .pagination-item {
-  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  margin-right: 11px;
+  background-color: #eeeeee;
 }
 
 .pagination-item:last-child {
@@ -1005,8 +1020,10 @@ a {
 
 .pagination-item a {
   display: block;
-  padding: 10px 19px;
   color: #000000;
+  border-radius: 5px;
+  float: left;
+  padding: 13px 21px;
 }
 
 .pagination-item a:hover,
@@ -1019,7 +1036,9 @@ a {
 }
 
 .pagination-item-current a {
+  padding: 0;
   border: 3px solid #dbdbdb;
+  padding: 10px 19px;
 }
 
 .pagination-item-current a:hover,
@@ -1030,6 +1049,12 @@ a {
 .pagination-item-current a:active {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
+}
+
+.pagination-item-next a{
+  width: 260px;
+  text-align: center;
+  background-color: #eeeeee;
 }
 
 /*==========================*/
