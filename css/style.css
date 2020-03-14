@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+3
   color: #000000;
   background-color: #ffffff;
 }
@@ -103,11 +103,9 @@ a {
   justify-content: space-between;
   padding-bottom: 18px;
   padding-top: 49px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-
-/*.main-logo {
-  margin-left: 140px;
-}*/
 
 .main-logo:hover,
 .main-logo:focus {
@@ -122,6 +120,8 @@ a {
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -154,8 +154,9 @@ a {
 }
 
 .basket-navigation {
+  margin: 0;
+  padding: 0;
   display: flex;
-
   align-items: center;
 }
 
@@ -410,8 +411,11 @@ a {
   margin: 0px;
   padding: 0px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+
+  padding-bottom: 80px;
+  border-width: 1160px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .sphere-item {
@@ -522,12 +526,7 @@ a {
 /* О студии*/
 
 .about-option {
-  padding-top: 61px;
-  margin-top: 61px;
-
-  border-width: 1160px;
-  border-top: 2px solid #eeeeee;
-
+  margin-top: 40px;
 }
 
 .about {
@@ -648,9 +647,6 @@ a {
   border-bottom: 2px solid #eeeeee;
   padding-bottom: 44px;
   margin-bottom: 80px;
-
-  /*margin-left: 140px;
-  margin-right: 140px;*/
 }
 
 .partners ul{
@@ -1062,12 +1058,12 @@ a {
   position: absolute;
   background-color: #ffffff;
   bottom: 54px;
-  /*left: 260px;*/
   z-index: 1;
 }
 
 .footer-contacts address {
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-style: normal;
   text-align: left;
   margin-top: 54px;
@@ -1080,14 +1076,17 @@ a {
   height: 50px;
 }
 
-.address h3{
+.footer-contacts h3{
+  margin: 0;
+  width: 193px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  width: 192px;
 }
 
-.address p{
+.footer-contacts p{
+  margin: 0;
+  padding-top: 32px;
   color: #8f8f8f;
   line-height: 18px;
   width: 200px;
