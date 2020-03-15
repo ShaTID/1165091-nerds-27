@@ -55,9 +55,9 @@ a {
 .shop,
 .main {
 	color: #40b684;
-  display: block;
-	border-bottom: 2px solid transparent;
+  border-bottom: 2px solid transparent;
   border-color: #fb565a;
+  display: block;
 }
 
 .catalog-price {
@@ -95,10 +95,14 @@ a {
 .main-navigation {
   display: flex;
   justify-content: space-between;
-  /*padding-bottom: 18px;*/
   padding-top: 49px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.navigation-width {
+  width: 438px;
+  margin: auto auto;
 }
 
 .main-logo:hover,
@@ -123,6 +127,10 @@ a {
   min-width: 438px;
   list-style: none;
 }
+
+/*.site-navigation a {
+  margin-right: 50px;
+}*/
 
 .site-navigation,
 .basket-navigation {
@@ -457,6 +465,7 @@ a {
   text-transform: uppercase;
   background: #fb565a;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -477,6 +486,7 @@ a {
 
 .mod {
   background-color: #fb565a;
+  border-radius: 5px;
 }
 
 .mod:hover,
@@ -702,6 +712,10 @@ a {
   padding: 0;  
 }
 
+.filter-name {
+  margin-bottom: 21px;
+}
+
 .filter-search {
   margin-bottom: 17px;
   padding-left: 35px;
@@ -732,6 +746,7 @@ a {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .sort a{
@@ -844,12 +859,14 @@ a {
 .filter-show {
   width: 260px;
   height: 50px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 18px;
   text-align: center;
   background-color: #eeeeee;
   border:none;
+  border-radius: 5px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .filter-show:hover,
@@ -949,9 +966,9 @@ a {
   opacity: 1.0;
 }
 
-
 .catalog-price {
   position: absolute;
+  width: 360px;
   bottom: 40px;
   left: -1px;
   z-index: 1;
@@ -975,11 +992,13 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
-
-
-.test p{
+ 
+.card-width {
+  margin: 0 auto;
+  max-width: 227px;
+}
+.card-width p{
   margin: 0;
-  width: 227px;
   text-align: center;
 }
 
@@ -1005,6 +1024,11 @@ a {
   display: flex;
   margin-top: 20px;
   margin-bottom: 60px;
+}
+
+.pagination-list a{
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .pagination-item {
@@ -1059,18 +1083,6 @@ a {
 
 /*==========================*/
 /*============MAP===========*/
-
-/*.main-map {
-  position: relative;
-  width: 1160px;
-  margin: 0 auto;
-}*/
-
-/*.test {
-  position: relative;
-  width: 1160px;
-  margin: 0 auto;
-}*/
 
 .maps {
   position: relative;
@@ -1250,9 +1262,7 @@ a {
   width: 960px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   z-index: 5;
-  /*padding-top: 73px;
-  padding-bottom: 84px;
-  margin-left: 100px;*/
+  margin: auto;
 }
 
 .modal-write {
@@ -1260,7 +1270,6 @@ a {
   top: 120px;
   left: 240px;
   right: 240px;
-  /*padding: 73px 100px 84px 100px;*/
 }
 
 .modal-show {
