@@ -664,7 +664,7 @@ a {
 
 .partners-line {
   border-right: 2px solid #eeeeee;
-  padding-right: auto;
+  padding: 0 auto 0 0;
 }
 
 .partners-logo {
