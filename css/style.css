@@ -121,16 +121,16 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   min-width: 438px;
   list-style: none;
 }
 
-/*.site-navigation a {
-  margin-right: 50px;
-}*/
+.site-navigation li{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .site-navigation,
 .basket-navigation {
@@ -291,7 +291,7 @@ a {
   background-color: #eeeeee;
   background-image: url("img/background/grey-back.png");
   background-repeat: no-repeat;
-  padding-bottom: 49px;
+  padding-bottom: 31px;
 
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
@@ -360,7 +360,7 @@ a {
 #product-1:checked ~ .site-wrapper label[for="product-1"],
 #product-2:checked ~ .site-wrapper label[for="product-2"],
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .slide-title {
@@ -400,12 +400,6 @@ a {
 .flex-slide a {
   padding: 19px 39px 18px 39px;
 }
-
-/*.flex-slide img {
-  width: 698px;
-  height: 413px;
-}*/
-
 
 /*Сфера деятельности*/
 
@@ -487,6 +481,7 @@ a {
 .mod {
   background-color: #fb565a;
   border-radius: 5px;
+
 }
 
 .mod:hover,
@@ -1111,6 +1106,7 @@ a {
   margin-top: 35px;
   width: 219px;
   height: 50px;
+  margin-bottom: 47px;
 }
 
 .footer-contacts h3{
@@ -1184,7 +1180,7 @@ a {
 
 .footer-contacts {
   width: 319px;
-  height: 308px;
+  /*height: 308px;*/
 }
 .footer-contacts h3{
   font-size: 18px;
