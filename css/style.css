@@ -296,11 +296,11 @@ a {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-.site-wrapper::before,
+/*.site-wrapper::before,
 .site-wrapper::after {
   content: "";
   visibility: hidden;
-}
+}*/
 
 .site-wrapper::before {
   background-image: url("img/index/slider-index/slide2.png");
