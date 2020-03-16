@@ -615,7 +615,7 @@ a {
   padding-right: 25px;
 }
 
-.percent-item p: last-child {
+.percent-item p:last-child {
   padding-right: 0;
 }
 
@@ -662,7 +662,7 @@ a {
   flex-wrap: wrap;
 }
 
-.line {
+.partners-line {
   border-right: 2px solid #eeeeee;
   padding-right: auto;
 }
