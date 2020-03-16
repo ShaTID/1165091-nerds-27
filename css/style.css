@@ -662,9 +662,9 @@ a {
   flex-wrap: wrap;
 }
 
-.partners-line {
+.line {
   border-right: 2px solid #eeeeee;
-  padding: 0 auto 0 0;
+  padding: auto;
 }
 
 .partners-logo {
