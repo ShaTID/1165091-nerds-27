@@ -5,7 +5,6 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-3
   color: #000000;
   background-color: #ffffff;
 }
@@ -1109,20 +1108,21 @@ a {
   margin-bottom: 47px;
 }
 
-.test p{
-  margin: 0;
-  width: 193px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
-}
-
 .footer-contacts p{
   margin: 0;
   padding-top: 32px;
   color: #8f8f8f;
   line-height: 18px;
   width: 200px;
+}
+
+.test {
+  margin: 0;
+  width: 193px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
 }
 
 /*==========================*/
@@ -1180,7 +1180,6 @@ a {
 
 .footer-contacts {
   width: 319px;
-  /*height: 308px;*/
 }
 .footer-contacts h3{
   font-size: 18px;
