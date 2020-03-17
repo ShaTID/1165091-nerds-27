@@ -346,6 +346,7 @@ a {
   font-size: 0;
 }
 
+
 .slide {
   display: none;
 }
@@ -354,12 +355,13 @@ a {
 #product-2:checked ~ .site-wrapper #slide2,
 #product-3:checked ~ .site-wrapper #slide3 {
   display: block;
+
 }
 
 #product-1:checked ~ .site-wrapper label[for="product-1"],
 #product-2:checked ~ .site-wrapper label[for="product-2"],
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .slide-title {
@@ -559,7 +561,7 @@ a {
 
 .about p{
   margin: 0;
-  line-height: 1.5;
+  line-height: 1;
   color: #283136;
 }
 
@@ -624,6 +626,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 33px;
 }
 
 .percent {
@@ -631,14 +634,13 @@ a {
   font-size: 45px;
   font-weight: 700;
   line-height: 10.06px;
-  padding-top: 49px;
+  padding-top: 45px;
 }
 
 .percent-text {
   font-weight: 400;
   line-height: 1.13;
-  padding-top: 27px;
-
+  padding-top: 22px;
 }
 
 /*Партнеры*/
@@ -1003,8 +1005,6 @@ a {
   line-height: 18px;
   color: #666666;
 }
-
-
 
 
 /*-----ПАГИНАЦИЯ-----*/
