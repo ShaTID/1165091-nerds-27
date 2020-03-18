@@ -1197,12 +1197,9 @@ a {
   width: 1160px;
   height: 217px;
   display: flex;
-  /*justify-content: space-between;*/
-  /*padding-top: 69px;*/
 }
 
 .slogan {
-  /*max-width: 545px;*/
   text-align: left;
   padding-left: 140px;
 }
