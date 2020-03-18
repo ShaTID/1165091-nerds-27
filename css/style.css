@@ -14,7 +14,7 @@ a {
 }
 
 .container-width {
-  max-width: 1160px;
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -177,8 +177,9 @@ a {
 /*---слайдер---*/
 
 .slider {
-  width: 261px;
-  height: 80px;
+  max-width: 1160px;
+  height: 413px;
+  margin-bottom: 80px;
 }
 
 .filter-item {
@@ -295,12 +296,6 @@ a {
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
-/*.site-wrapper::before,
-.site-wrapper::after {
-  content: "";
-  visibility: hidden;
-}*/
-
 .site-wrapper::before {
   background-image: url("img/index/slider-index/slide2.png");
 }
@@ -339,7 +334,7 @@ a {
 .slider-controls {
   position: absolute;
   display: flex;
-  bottom: -260px;
+  bottom: 90px;
   left: 536px;
   z-index: 1;
   
@@ -412,6 +407,7 @@ a {
   flex-wrap: wrap;
 
   padding-bottom: 80px;
+  margin-bottom: 80px;
   border-width: 1160px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -480,9 +476,9 @@ a {
 }
 
 .mod {
+  margin: 0;
   background-color: #fb565a;
   border-radius: 5px;
-
 }
 
 .mod:hover,
@@ -527,14 +523,15 @@ a {
 
 /* О студии*/
 
-.about-option {
+/*.about-option {
   margin-top: 40px;
-}
+}*/
 
 .about {
   font-weight: 400;
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 
 .little-and-info {
@@ -667,7 +664,6 @@ a {
 
 .line {
   border-right: 2px solid #eeeeee;
-  /*padding: auto;*/
 }
 
 .partners-logo {
@@ -965,9 +961,8 @@ a {
 
 .catalog-price {
   position: absolute;
-  width: 360px;
+  width: 358px;
   bottom: 40px;
-  left: -1px;
   z-index: 1;
   
   font-size: 0;
@@ -981,8 +976,8 @@ a {
 .catalog-price h2{
   margin: 0;
   text-decoration: none;
-  padding-top: 35px;
-  padding-bottom: 26px;
+  margin-top: 35px;
+  margin-bottom: 26px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -992,7 +987,7 @@ a {
  
 .card-width {
   margin: 0 auto;
-  max-width: 227px;
+  max-width: 228px;
 }
 .card-width p{
   margin: 0;
@@ -1031,6 +1026,7 @@ a {
   height: 50px;
   margin-right: 11px;
   background-color: #eeeeee;
+  border-radius: 5px;
 }
 
 .pagination-item:last-child {
@@ -1079,6 +1075,10 @@ a {
 /*==========================*/
 /*============MAP===========*/
 
+.main-map {
+  margin-bottom: 70px;
+}
+
 .maps {
   position: relative;
   background-image: url("../img/maps-and-marker.jpg");
@@ -1100,13 +1100,14 @@ a {
   text-align: left;
   margin-top: 49px;
   margin-left: 50px;
+  margin-bottom: 35px;
 }
 
 .footer-contacts button {
-  margin-top: 35px;
   width: 219px;
   height: 50px;
   margin-bottom: 47px;
+  margin-left: 50px;
 }
 
 .footer-contacts p{
@@ -1119,7 +1120,6 @@ a {
 
 .name-address {
   margin: 0;
-  width: 193px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -1180,8 +1180,9 @@ a {
 }
 
 .footer-contacts {
-  width: 319px;
+  width: 320px;
 }
+
 .footer-contacts h3{
   font-size: 18px;
   font-weight: 700;
@@ -1193,17 +1194,29 @@ a {
 }
 
 .social-slogan {
-  width: 944px;
-  height: 78px;
+  width: 1160px;
+  height: 217px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 69px;
-  margin-bottom: 69px;
+  /*justify-content: space-between;*/
+  /*padding-top: 69px;*/
 }
 
 .slogan {
-  max-width: 545px;
-  text-align: center;
+  /*max-width: 545px;*/
+  text-align: left;
+  padding-left: 140px;
+}
+
+.slogan h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.slogan p {
+  margin: 0;
+  padding-top: 10px;
 }
 
 
