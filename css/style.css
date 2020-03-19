@@ -1,10 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 500;
   color: #000000;
   background-color: #ffffff;
 }
@@ -24,7 +24,7 @@ a {
 }
 
 .container-fc {
-  width:319px;
+  width: 319px;
   margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@ a {
 }
 
 .visually-hidden {
-	position: absolute;
+  position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
@@ -53,18 +53,17 @@ a {
 
 .shop,
 .main {
-	color: #40b684;
+  color: #40b684;
   border-bottom: 2px solid transparent;
   border-color: #fb565a;
   display: block;
 }
 
-
 /*Навигация/Главный Логотип/ ссылка на корзину*/
 
 .main-header {
   background-color: #eeeeee;
-  background-image: url('img/background/grey-back.png');
+  background-image: url("img/background/grey-back.png");
   background-repeat: no-repeat;
 }
 
@@ -78,8 +77,9 @@ a {
   justify-content: space-between;
   padding-top: 49px;
   text-transform: uppercase;
-  font-weight: 700;
+  line-height: 1.88;
 }
+
 
 .navigation-width {
   width: 438px;
@@ -90,6 +90,7 @@ a {
 .main-logo:focus {
   opacity: 0.8;
 }
+
 .main-logo:active {
   opacity: 0.3;
 }
@@ -155,7 +156,6 @@ a {
   margin-top: 82px;
 }
 
-
 /*---слайдер---*/
 
 .slider {
@@ -184,40 +184,34 @@ a {
 
 .range-controls {
   position: relative;
-  
   height: 41px;
   margin-bottom: 15px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  
   background-color: #f1f1f1;
-  
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: #d7dcde;
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 30%;
   height: 2px;
-
   background: #00ca74;
+  margin-left: 40px;
 }
 
 .range-controls .toggle {
   position: absolute;
   top: 31px;
   left: 0;
-  
   width: 4px;
   height: 4px;
   padding: 0;
-
   border: 8px solid #ffffff;
   background-color: #ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -241,7 +235,6 @@ a {
   display: inline-block;
   vertical-align: top;
   width: 50%;
-  
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -249,13 +242,11 @@ a {
 .price-controls input {
   width: 60px;
   padding: 8px 10px;
-  margin-left: 10px;
-  
-  font-family: Roboto, Arial, sans-serif;
+  margin-left: 10px; 
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
-  color: #283136;
-  
+  color: #283136; 
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
@@ -267,7 +258,6 @@ a {
 
 /*---Слайды---*/
 
-
 .site-wrapper {
   width: 100%;
   height: 503px;
@@ -275,7 +265,6 @@ a {
   background-image: url("img/background/grey-back.png");
   background-repeat: no-repeat;
   padding-bottom: 31px;
-
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -296,7 +285,6 @@ a {
   padding: 0px;
   margin: 0px;
   width: 1129px;
-  
   list-style: none;
 }
 
@@ -305,9 +293,7 @@ a {
   width: 18px;
   height: 18px;
   margin-right: 17px;
-
   vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
@@ -320,10 +306,8 @@ a {
   bottom: 90px;
   left: 536px;
   z-index: 1;
-  
   font-size: 0;
 }
-
 
 .slide {
   display: none;
@@ -333,7 +317,6 @@ a {
 #product-2:checked ~ .site-wrapper #slide2,
 #product-3:checked ~ .site-wrapper #slide3 {
   display: block;
-
 }
 
 #product-1:checked ~ .site-wrapper label[for="product-1"],
@@ -351,7 +334,6 @@ a {
   height: 413px;
   flex-grow: 1;
   float: right;
-
 }
 
 .slide-title h3 {
@@ -382,13 +364,11 @@ a {
 
 /*Сфера деятельности*/
 
-
 .sphere {
   margin: 0px;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
-
   padding-bottom: 80px;
   margin-bottom: 80px;
   border-width: 1160px;
@@ -506,10 +486,6 @@ a {
 
 /* О студии*/
 
-/*.about-option {
-  margin-top: 40px;
-}*/
-
 .about {
   font-weight: 400;
   display: flex;
@@ -598,7 +574,6 @@ a {
 }
 
 .year {
-  /*width: 328px;*/
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -627,7 +602,6 @@ a {
   border-top: 2px solid #eeeeee;
   margin-top: 77px;
   padding-top: 46px;
-
   border-bottom-width: 1160px;
   border-bottom: 2px solid #eeeeee;
   padding-bottom: 44px;
@@ -669,7 +643,7 @@ a {
   line-height: 55px;
   color: #000000;
   background-color: #eeeeee;
-  background-image: url('img/background/grey-back.png');
+  background-image: url("img/background/grey-back.png");
   background-repeat: repeat;
 }
 
@@ -743,15 +717,12 @@ a {
 
 .filter-input-radio + label::before {
   content: "";
-
   position: absolute;
   left: -35px;
   top: 0px;
-
   width: 25px;
   height: 25px;
-
-  background-image: url('../img/svg/radio-off.svg');
+  background-image: url("../img/svg/radio-off.svg");
   opacity: 0.4;
   background-repeat: no-repeat;
   background-position: center;
@@ -759,15 +730,12 @@ a {
 
 .filter-input-radio:checked + label::before {
   content: "";
-
   position: absolute;
   top: 0px;
   left: -35px;
-
   width: 25px;
   height: 25px;
-
-  background-image: url('../img/svg/radio-on.svg');
+  background-image: url("../img/svg/radio-on.svg");
   opacity: 1;
   background-repeat: no-repeat;
   background-position: center;
@@ -777,14 +745,10 @@ a {
   content: "";
   left: -35px;
   top: 0;
-
   position: absolute;
-
   width: 23px;
   height: 23px;
-
-
-  background-image: url('../img/svg/checkbox-off.svg');
+  background-image: url("../img/svg/checkbox-off.svg");
   opacity: 0.4;
   background-repeat: no-repeat;
   background-position: center;
@@ -794,14 +758,10 @@ a {
   content: "";
   left: -35px;
   top: 0px;
-
   position: absolute;
-
   width: 25px;
   height: 23px;
-
-
-  background-image: url('../img/svg/checkbox-on.svg');
+  background-image: url("../img/svg/checkbox-on.svg");
   opacity: 1;
   background-repeat: no-repeat;
   background-position: center;
@@ -873,10 +833,10 @@ a {
 }
 
 .sort a{
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 18px;
-	opacity: 0.3;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.3;
 }
 
 .sort a:hover,
@@ -885,8 +845,8 @@ a {
 }
 
 .sort a:active {
-	opacity: 1.0;
-	color: #000000;
+  opacity: 1.0;
+  color: #000000;
 }
 
 .sort ul {
@@ -894,7 +854,7 @@ a {
   width: 359px;
   list-style: none;
   display: flex;
-  justify-content:  space-around;
+  justify-content: space-around;
 
 }
 
@@ -905,7 +865,7 @@ a {
 }
 
 .browser {
-	opacity: 0.12;
+  opacity: 0.12;
   width: 360px;
   height: 40px;
 }
@@ -941,7 +901,6 @@ a {
 .catalog-price {
   position: absolute;
   padding: 0;
-
   background-color: #eeeeee;
   width: 360px;
   min-height: 231px;
@@ -949,8 +908,6 @@ a {
   display: none;
   bottom: 40px;
   z-index: 1;
-
-  /*font-size: 0;*/
 }
 
 .catalog-price a:visited {
@@ -965,7 +922,6 @@ a {
 .catalog-price a:active {
   color: #b2b2b2;
 }
-
 
 .catalog-price button {
   width: 200px;
@@ -1001,9 +957,7 @@ a {
   color: #666666;
 }
 
-
 /*-----ПАГИНАЦИЯ-----*/
-
 
 .pagination-list {
   padding: 0px;
@@ -1142,7 +1096,6 @@ a {
   background-color: #ffffff;
 }
 
-
 /*Ссыки на соц сети*/
 
 .social-network {
@@ -1171,7 +1124,7 @@ a {
   vertical-align: top;
   width: 79px;
   height: 79px;
-  text-align:center;
+  text-align: center;
   line-height: 85px;
   background-color: #e1e1e1;
   border-radius: 50%;
@@ -1199,7 +1152,7 @@ a {
 }
 
 .footer-contacts p{
-	line-height: 18px;
+  line-height: 18px;
 }
 
 .social-slogan {
@@ -1225,22 +1178,18 @@ a {
   padding-top: 10px;
 }
 
-
 /*Форма обратной связи*/
 
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
   }
-
   70% {
     transform: translateY(30px);
   }
-
   90% {
     transform: translateY(-10px);
   }
-
   100% {
     transform: translateY(0);
   }
@@ -1251,7 +1200,6 @@ a {
   100% {
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -1259,7 +1207,6 @@ a {
   90% {
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
@@ -1270,9 +1217,7 @@ a {
 
 .modal {
   position: fixed;
-  
   color: #000000;
-
   background-color: #ffffff;
   width: 960px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1300,7 +1245,6 @@ a {
   width: 21px;
   height: 21px;
   opacity: 0.3;
-
   position: absolute;
   right: 90px;
   top: 80px;
@@ -1320,15 +1264,12 @@ a {
 .modal-close::before,
 .modal-close::after {
   content: "";
-
   position: absolute;
   top: 0px;
   left: 0px;
-
   width: 21px;
   height: 21px;
-
-  background-image: url('../img/svg/close-cross.svg');
+  background-image: url("../img/svg/close-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1337,7 +1278,6 @@ a {
   margin: 0;
   margin-top: 73px;
   margin-left: 100px;
-
   font-size: 45px;
   line-height: 1;
 }
