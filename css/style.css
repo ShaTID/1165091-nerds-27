@@ -59,24 +59,6 @@ a {
   display: block;
 }
 
-.catalog-price {
-  padding: 0;
-
-  background-color: #eeeeee;
-  width: 360px;
-  min-height: 231px;
-  text-align: center;
-  display: none;
-}
-
-.catalog-price h2:hover,
-.catalog-price h2:focus{
-  color: #fb565a;
-}
-
-.catalog-price h2:active {
-  color: #b2b2b2;
-}
 
 /*Навигация/Главный Логотип/ ссылка на корзину*/
 
@@ -958,12 +940,32 @@ a {
 
 .catalog-price {
   position: absolute;
-  width: 358px;
+  padding: 0;
+
+  background-color: #eeeeee;
+  width: 360px;
+  min-height: 231px;
+  text-align: center;
+  display: none;
   bottom: 40px;
   z-index: 1;
-  
-  font-size: 0;
+
+  /*font-size: 0;*/
 }
+
+.catalog-price a:visited {
+  color: #000000;
+}
+
+.catalog-price a:hover,
+.catalog-price a:focus {
+  color: #fb565a;
+}
+
+.catalog-price a:active {
+  color: #b2b2b2;
+}
+
 
 .catalog-price button {
   width: 200px;
