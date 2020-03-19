@@ -535,18 +535,13 @@ a {
   margin-top: 40px;
 }
 
-.little-and-info {
-  width: 650px;
-}
-
-
 .about h3 {
   margin: 0;
   width: 668px;
   font-size: 45px;
   line-height: 1;
   margin-top: 40px;
-
+  font-weight: 500;
 }
 
 .little-studio {
@@ -554,6 +549,7 @@ a {
 }
 
 .little-studio p{
+  width: 650px;
   padding-top: 35px;
 }
 
@@ -620,7 +616,7 @@ a {
 }
 
 .year {
-  width: 328px;
+  /*width: 328px;*/
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -1360,7 +1356,7 @@ a {
 
 .contact-name,
 .email {
-  width: 360px;
+  width: 358px;
   height: 50px;
   border: solid 2px #d7dcde;
   margin-top: 12px;
