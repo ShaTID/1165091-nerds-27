@@ -304,8 +304,8 @@ a {
 .slider-controls {
   position: absolute;
   display: flex;
-  bottom: 90px;
-  left: 536px;
+  bottom: 85px;
+  left: 534px;
   z-index: 1;
   font-size: 0;
 }
@@ -372,7 +372,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   border-width: 1160px;
   border-bottom: 2px solid #eeeeee;
 }
@@ -396,14 +396,17 @@ a {
 }
 
 .sphere h3 {
+  margin: 0;
   font-size: 24px;
   line-height: 1.25;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 17px;
 }
 
 .sphere p {
   width: 250px;
+  margin-bottom: 32px;
 }
 
 .sphere button {
@@ -494,7 +497,7 @@ a {
   font-weight: 400;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
 }
 
 .about h3 {
@@ -502,7 +505,7 @@ a {
   width: 668px;
   font-size: 45px;
   line-height: 1;
-  margin-top: 40px;
+  margin-top: 34px;
   font-weight: 500;
 }
 
@@ -537,7 +540,7 @@ a {
   margin: 0px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 47px;
+  padding-top: 38px;
 }
 
 .order-info ul{
@@ -547,7 +550,7 @@ a {
 }
 
 .order-info li {
-  padding-top: 20px;
+  padding-top: 24px;
 }
 
 .dash {
@@ -587,7 +590,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 33px;
+  padding-top: 12px;
 }
 
 .percent {
@@ -595,15 +598,15 @@ a {
   font-size: 45px;
   font-weight: 700;
   line-height: 10.06px;
-  padding-top: 45px;
-  padding-top: 30px;
+  /*padding-top: 45px;*/
+  padding-top: 20px;
 }
 
 .percent-text {
   margin: 0;
   font-weight: 400;
   line-height: 1.13;
-  padding-top: 22px;
+  padding-top: 38px;
 }
 
 /*Партнеры*/
