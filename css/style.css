@@ -1,10 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
   color: #000000;
   background-color: #ffffff;
 }
@@ -237,14 +236,16 @@ a {
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
+  line-height: 1.38;
 }
 
 .price-controls input {
   width: 60px;
   padding: 8px 10px;
   margin-left: 10px; 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
+  line-height: 1.18;
   text-align: center;
   color: #283136; 
   border: none;
@@ -342,7 +343,8 @@ a {
   padding-bottom: 28px;
   width: 521px;
   font-size: 55px;
-  line-height: 55px;
+  line-height: 1;
+  font-weight: 500;
 }
 
 .flex-slide {
@@ -395,7 +397,7 @@ a {
 
 .sphere h3 {
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.25;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -421,6 +423,8 @@ a {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  line-height: 1.13;
+  font-weight: 500;
 }
 
 .red {
@@ -507,15 +511,20 @@ a {
 }
 
 .little-studio p{
+  margin: 0;
+  line-height: 1.5;
+  color: #283136;
   width: 650px;
   padding-top: 35px;
 }
 
-.about p{
+/*.about p{
   margin: 0;
-  line-height: 1;
+  line-height: 1.5;
   color: #283136;
-}
+}*/
+
+.
 
 .order-info {
   color: #283136;
@@ -566,6 +575,7 @@ a {
 }
 
 .percent-item p {
+  margin: 0;
   padding-right: 25px;
 }
 
@@ -590,6 +600,7 @@ a {
 }
 
 .percent-text {
+  margin: 0;
   font-weight: 400;
   line-height: 1.13;
   padding-top: 22px;
@@ -696,7 +707,7 @@ a {
 }
 
 .sort a{
-  color: #b2b2b2;
+  color: #b3b3b3;
 }
 
 .sort li:hover,
@@ -791,8 +802,8 @@ a {
 .filter-show {
   width: 260px;
   height: 50px;
-  font-weight: 700;
-  line-height: 18px;
+  font-weight: 500;
+  line-height: 1.13;
   text-align: center;
   background-color: #eeeeee;
   border:none;
@@ -971,7 +982,7 @@ a {
 
 .pagination-list a{
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .pagination-item {
@@ -1069,13 +1080,13 @@ a {
   margin: 0;
   padding-top: 32px;
   padding-bottom: 20px;
-  color: #8f8f8f;
+  color: #666666;
   line-height: 18px;
   width: 200px;
 }
 
 .footer-contacts a{
-  color: #8f8f8f;
+  color: #666666;
   line-height: 18px;
   width: 200px;
 }
@@ -1176,6 +1187,7 @@ a {
 .slogan p {
   margin: 0;
   padding-top: 10px;
+  line-height: 1.38;
 }
 
 /*Форма обратной связи*/
@@ -1280,6 +1292,7 @@ a {
   margin-left: 100px;
   font-size: 45px;
   line-height: 1;
+  font-weight: 500;
 }
 
 .popup-all {
