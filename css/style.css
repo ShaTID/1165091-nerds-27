@@ -18,7 +18,8 @@ a {
 }
 
 .container-partners {
-  max-width: 1086px;
+  /*max-width: 1086px;*/
+  width: 1160px;
   margin: 0 auto;
 }
 
