@@ -261,7 +261,7 @@ a {
 
 .site-wrapper {
   width: 100%;
-  height: 503px;
+  height: 515px;
   background-color: #eeeeee;
   background-image: url("img/background/grey-back.png");
   background-repeat: no-repeat;
@@ -331,15 +331,15 @@ a {
 }
 
 .slide-title img {
-  min-width: 663px;
-  height: 413px;
+  width: 700px;
+  height: 425px;
   flex-grow: 1;
-  float: right;
+  /*float: center;*/
 }
 
 .slide-title h3 {
   margin: 0;
-  padding-top: 82px;
+  padding-top: 68px;
   padding-bottom: 28px;
   width: 521px;
   font-size: 55px;
@@ -355,13 +355,13 @@ a {
 .flex-slide p {
   margin: 0;
   min-width: 360px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   line-height: 1.5;
   color: #283136;
 }
 
 .flex-slide a {
-  padding: 19px 39px 18px 39px;
+  padding: 15px 56px 15px 55px;
 }
 
 /*Сфера деятельности*/
