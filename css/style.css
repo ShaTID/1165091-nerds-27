@@ -614,7 +614,7 @@ a {
 .partners {
   border-top-width: 1160px;
   border-top: 2px solid #eeeeee;
-  margin-top: 77px;
+  margin-top: 72px;
   padding-top: 46px;
   border-bottom-width: 1160px;
   border-bottom: 2px solid #eeeeee;
@@ -623,10 +623,16 @@ a {
 }
 
 .partners ul{
+  padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   flex-wrap: wrap;
+}
+
+.partners li {
+  margin-right: auto;
 }
 
 .line {
