@@ -635,6 +635,24 @@ a {
   margin-right: auto;
 }
 
+.partners li:last-child {
+  margin-right: 0;
+}
+
+.part-opt1 {
+  margin-top: 16px;
+}
+
+.part-opt3 {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.part-opt4 {
+  margin-top: 8px;
+ /* margin-left: 40px;*/
+}
+
 .line {
   border-right: 2px solid #eeeeee;
 }
