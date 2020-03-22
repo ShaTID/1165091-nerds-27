@@ -894,7 +894,7 @@ a {
   width: 25px;
   height: 25px;
   background-image: url("../img/svg/radio-on.svg");
-  opacity: 1;
+  opacity: 0.4;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -920,7 +920,7 @@ a {
   width: 25px;
   height: 23px;
   background-image: url("../img/svg/checkbox-on.svg");
-  opacity: 1;
+  opacity: 0.4;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -929,7 +929,7 @@ a {
 .filter-input-radio:hover + label,
 .filter-input-checkbox:focus + label,
 .filter-input-radio:focus + label{
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .filter-search {
