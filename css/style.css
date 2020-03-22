@@ -73,7 +73,6 @@ a {
 
 .main-navigation {
   display: flex;
-  /*justify-content: space-between;*/
   padding-top: 49px;
   text-transform: uppercase;
   line-height: 1.88;
@@ -152,9 +151,6 @@ a {
 .basket-navigation svg {
   margin-right: 26px;
 }
-/*
-
-}*/
 
 /*---слайдер---*/
 
@@ -586,6 +582,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   padding-top: 12px;
+  word-spacing: 2px;
 }
 
 .percent-1,
@@ -795,6 +792,7 @@ a {
   background-color: #eeeeee;
   background-image: url("img/background/grey-back.png");
   background-repeat: repeat;
+  word-spacing: 3px;
 }
 
 /*Фильтры и каталог*/
@@ -803,14 +801,18 @@ a {
   margin-top: 28px;
 }
 
+.price-opt {
+  letter-spacing: 1px;
+}
+
 .filter-item-search {
   margin-top: 56px;
-  padding: 0;  
+  padding: 0;
 }
 
 .filter-item-search1 {
   margin-top: 26px;
-  padding: 0;  
+  padding: 0;
 }
 
 
@@ -992,7 +994,6 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  /*margin-left: 13px;*/
   opacity: 0.3;
 }
 
@@ -1031,8 +1032,6 @@ a {
   width: 359px;
   list-style: none;
   display: flex;
-  /*justify-content: space-around;*/
-
 }
 
 /*Каталог*/
@@ -1081,10 +1080,6 @@ a {
   padding: 0;
   background-color: #eeeeee;
   width: 358px;
-  /*min-height: 231px;
-  text-align: center;
-  margin-top: 5px;
-  margin-left: 10px;*/
   display: none;
   bottom: 40px;
   z-index: 1;
@@ -1125,21 +1120,106 @@ a {
   color: #000000;
   text-transform: uppercase;
 }
- 
+
 .card-width {
   margin: 0 auto;
   max-width: 230px;
+}
+
+/*каталон пинк*/
+
+.pink-opt {
+  margin-top: 26px;
+}
+
+.pink-opt a{
+  margin-left: -5px;
+}
+
+.card-text1 {
+  padding-left: 1px;
+  text-align: center;
+}
+
+/*каталог барбера*/
+
+.barb-opt {
+  margin-top: 26px;
+}
+
+.barb-opt a{
+  margin-left: -22px;
+}
+
+.barb-opt h2{
+  margin-bottom: 12px;
+}
+
+.card-text2 {
+  padding-left: 2px;
+  text-align: center;
+}
+
+/*каталог мишки*/
+
+.mishka-opt {
+  margin-top: 26px;
+}
+
+.mishka-opt a{
+  margin-left: 1px;
+}
+
+.mishka-opt h2{
+  margin-bottom: 12px;
+}
+
+.card-text3 {
+  padding-left: 2px;
+  text-align: center;
+}
+
+/*каталог plus*/
+
+.plus-opt {
+  margin-top: 27px;
+}
+
+.plus-opt a{
+  margin-left: 5px;
+}
+
+.plus-opt h2{
+  padding-bottom: 2px;
+}
+
+.card-text4 {
+  text-align: center;
+}
+
+/*каталог kvast*/
+
+.kvast-opt {
+  margin-top: 27px;
+}
+
+.kvast-opt a{
+  margin-left: 6px;
+}
+
+.kvast-opt h2{
+  padding-bottom: 2px;
+}
+
+.card-text5 {
+  padding-left: 6px;
+  text-align: center;
 }
 
 .card-text {
   padding-left: 19px;
   text-align: center;
 }
-
-/*.card-width p{
-  margin: 0;
-  text-align: center;
-}*/
 
 .catalog-price p{
   margin: 0;
@@ -1249,7 +1329,6 @@ a {
   margin-top: 49px;
   margin-left: 50px;
   margin-bottom: 35px;
-  /*padding-bottom: 14px;*/
 }
 
 .footer-contacts button {
@@ -1264,7 +1343,6 @@ a {
   padding-top: 22px;
   padding-bottom: 14px;
   color: #666666;
-  /*line-height: 18px;*/
   width: 200px;
 }
 
@@ -1484,10 +1562,8 @@ a {
   line-height: 1.13;
   font-size: 16px;
   font-weight: bold;
-  /*padding-top: 42px;*/
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
 }
 
 .contact-name {
