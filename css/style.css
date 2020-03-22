@@ -1059,6 +1059,7 @@ a {
 
 .product {
   position: relative;
+  margin-bottom: -6px;
 }
 
 .product p {
@@ -1079,12 +1080,19 @@ a {
   position: absolute;
   padding: 0;
   background-color: #eeeeee;
-  width: 360px;
-  min-height: 231px;
+  width: 358px;
+  /*min-height: 231px;
   text-align: center;
+  margin-top: 5px;
+  margin-left: 10px;*/
   display: none;
   bottom: 40px;
   z-index: 1;
+}
+
+.catalog-but {
+  margin-bottom: 8px;
+  margin-left: 14px;
 }
 
 .catalog-price a:visited {
@@ -1108,8 +1116,9 @@ a {
 .catalog-price h2{
   margin: 0;
   text-decoration: none;
-  margin-top: 35px;
-  margin-bottom: 26px;
+  margin-top: 25px;
+  margin-bottom: 14px;
+  margin-left: 78px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -1119,12 +1128,18 @@ a {
  
 .card-width {
   margin: 0 auto;
-  max-width: 228px;
+  max-width: 230px;
 }
-.card-width p{
-  margin: 0;
+
+.card-text {
+  padding-left: 19px;
   text-align: center;
 }
+
+/*.card-width p{
+  margin: 0;
+  text-align: center;
+}*/
 
 .catalog-price p{
   margin: 0;
@@ -1132,6 +1147,7 @@ a {
   font-weight: 400;
   line-height: 18px;
   color: #666666;
+  padding-bottom: 32px;
 }
 
 /*-----ПАГИНАЦИЯ-----*/
@@ -1142,8 +1158,8 @@ a {
   list-style: none;
   text-decoration: none;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin-top: 26px;
+  margin-bottom: 59px;
 }
 
 .pagination-list a{
@@ -1183,7 +1199,7 @@ a {
 .pagination-item-current a {
   padding: 0;
   border: 3px solid #dbdbdb;
-  padding: 10px 19px;
+  padding: 10px 18px;
 }
 
 .pagination-item-current a:hover,
@@ -1197,7 +1213,7 @@ a {
 }
 
 .pagination-item-next a{
-  width: 260px;
+  width: 217px;
   text-align: center;
   background-color: #eeeeee;
 }
@@ -1449,6 +1465,7 @@ a {
   left: 0px;
   width: 21px;
   height: 21px;
+  margin-top: 6px;
   background-image: url("../img/svg/close-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1456,7 +1473,7 @@ a {
 
 .modal-write h2 {
   margin: 0;
-  margin-top: 73px;
+  margin-top: 75px;
   margin-left: 100px;
   font-size: 45px;
   line-height: 1;
@@ -1467,10 +1484,10 @@ a {
   line-height: 1.13;
   font-size: 16px;
   font-weight: bold;
-  padding-top: 49px;
+  /*padding-top: 42px;*/
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .contact-name {
@@ -1479,10 +1496,10 @@ a {
 
 .contact-name,
 .email {
-  width: 358px;
-  height: 50px;
+  width: 356px;
+  height: 43px;
   border: solid 2px #d7dcde;
-  margin-top: 12px;
+  margin-top: 9px;
 }
 
 .popup-comment {
@@ -1490,12 +1507,23 @@ a {
 }
 
 .comment {
-  margin-top: 12px;
+  margin-top: 9px;
   margin-left: 100px;
-  max-width: 760px;
-  height: 118px;
+  padding-top: 11px;
+  padding-left: 9px;
+  max-width: 752px;
+  height: 111px;
   border: solid 2px #d7dcde;
   resize: none;
+}
+
+.name-opt,
+.mail-opt {
+  margin-top: 40px;
+}
+
+.comment-opt {
+  margin-top: 35px;
 }
 
 .name-email {
@@ -1508,7 +1536,7 @@ a {
 .butred {
   width: 260px;
   height: 50px;
-  margin-top: 47px;
+  margin-top: 39px;
   margin-left: 100px;
   margin-bottom: 84px;
 }
