@@ -1293,6 +1293,10 @@ a {
   background-color: #d5d5d5;
 }
 
+.pagin-active {
+  background-color: #ffffff;
+}
+
 .pagination-item-next a{
   width: 217px;
   text-align: center;
