@@ -1088,8 +1088,6 @@ a {
 .catalog-but {
   margin-bottom: 9px;
   margin-top: 30px;
-  /*text-align: center;*/
- /*margin-left: 14px;*/
 }
 
 .catalog-price a:visited {
@@ -1113,9 +1111,7 @@ a {
 .catalog-price h2{
   margin: 0;
   text-decoration: none;
-  /*margin-top: 26px;*/
   margin-bottom: 15px;
-  /*margin-left: 78px;*/
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -1130,7 +1126,6 @@ a {
 }
 
 .card-text {
- /* padding-left: 19px;*/
   text-align: center;
 }
 
@@ -1140,7 +1135,6 @@ a {
   font-weight: 400;
   line-height: 18px;
   color: #666666;
-  /*padding-bottom: 32px;*/
 }
 
 /*-----ПАГИНАЦИЯ-----*/
