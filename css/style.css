@@ -1076,10 +1076,12 @@ a {
 .catalog-price {
   position: absolute;
   padding: 0;
+  padding-bottom: 31px;
+  padding-top: 25px;
   background-color: #eeeeee;
   width: 358px;
   display: none;
-  bottom: 40px;
+  bottom: 8px;
   z-index: 1;
 }
 
@@ -1111,7 +1113,7 @@ a {
 .catalog-price h2{
   margin: 0;
   text-decoration: none;
-  margin-top: 26px;
+  /*margin-top: 26px;*/
   margin-bottom: 15px;
   /*margin-left: 78px;*/
   text-align: center;
@@ -1126,91 +1128,6 @@ a {
   margin: 0 auto;
   max-width: 230px;
 }
-
-/*каталон пинк*/
-
-.pink-opt {
-  margin-top: 26px;
-}
-
-.pink-opt a{
-  margin-left: -5px;
-}
-
-/*каталог барбера*/
-
-.barb-opt {
-  margin-top: 26px;
-}
-
-.barb-opt a{
-  margin-left: -22px;
-}
-
-.barb-opt h2{
-  margin-bottom: 12px;
-}
-
-/*.card-text2 {
-  padding-left: 2px;
-  text-align: center;
-}*/
-
-/*каталог мишки*/
-
-.mishka-opt {
-  margin-top: 26px;
-}
-
-.mishka-opt a{
-  margin-left: 1px;
-}
-
-.mishka-opt h2{
-  margin-bottom: 12px;
-}
-
-/*.card-text3 {
-  padding-left: 2px;
-  text-align: center;
-}*/
-
-/*каталог plus*/
-
-.plus-opt {
-  margin-top: 27px;
-}
-
-.plus-opt a{
-  margin-left: 5px;
-}
-
-.plus-opt h2{
-  padding-bottom: 2px;
-}
-
-/*.card-text4 {
-  text-align: center;
-}*/
-
-/*каталог kvast*/
-
-.kvast-opt {
-  margin-top: 27px;
-}
-
-.kvast-opt a{
-  margin-left: 6px;
-}
-
-.kvast-opt h2{
-  padding-bottom: 2px;
-}
-
-/*.card-text5 {
-  padding-left: 6px;
-  text-align: center;
-}*/
 
 .card-text {
  /* padding-left: 19px;*/
