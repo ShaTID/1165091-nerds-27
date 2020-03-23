@@ -1032,6 +1032,7 @@ a {
   width: 359px;
   list-style: none;
   display: flex;
+  word-spacing: -1px;
 }
 
 /*Каталог*/
