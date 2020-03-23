@@ -1134,11 +1134,6 @@ a {
   margin-left: -5px;
 }
 
-.card-text1 {
-  padding-left: 1px;
-  text-align: center;
-}
-
 /*каталог барбера*/
 
 .barb-opt {
@@ -1153,10 +1148,10 @@ a {
   margin-bottom: 12px;
 }
 
-.card-text2 {
+/*.card-text2 {
   padding-left: 2px;
   text-align: center;
-}
+}*/
 
 /*каталог мишки*/
 
@@ -1172,10 +1167,10 @@ a {
   margin-bottom: 12px;
 }
 
-.card-text3 {
+/*.card-text3 {
   padding-left: 2px;
   text-align: center;
-}
+}*/
 
 /*каталог plus*/
 
@@ -1191,9 +1186,9 @@ a {
   padding-bottom: 2px;
 }
 
-.card-text4 {
+/*.card-text4 {
   text-align: center;
-}
+}*/
 
 /*каталог kvast*/
 
@@ -1209,13 +1204,13 @@ a {
   padding-bottom: 2px;
 }
 
-.card-text5 {
+/*.card-text5 {
   padding-left: 6px;
   text-align: center;
-}
+}*/
 
 .card-text {
-  padding-left: 19px;
+ /* padding-left: 19px;*/
   text-align: center;
 }
 
